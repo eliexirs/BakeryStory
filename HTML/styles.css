@@ -64,9 +64,6 @@ p{
     flex-wrap: wrap;
 }
 
-
-
-
 .container3{
     background-color: #e18abeb8;
     color: #ffffff;
@@ -74,6 +71,7 @@ p{
     text-align: center;
     align-items: center;
     padding: 20px;
+    margin: auto;
 }
 
 .imagen-aside{
@@ -83,10 +81,16 @@ p{
     width: 400px;
 }
 
-
-
-
-
+.container-login{
+    background-color: #e18abeb8;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
 
 .container2{
     width: 30%;
@@ -104,7 +108,7 @@ p{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 5px;
     margin-top: 20px;
 }
 
@@ -116,6 +120,18 @@ p{
 
 .espacio{
     padding: 15px;
+}
+
+button{
+    background-color: #ec8fcc; 
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.login-label{
+    display: inline-block; 
+    width: 100px; 
+    text-align: left;
 }
 
 footer{
