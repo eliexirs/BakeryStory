@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+    <html lang="es-ES">
+        <head>
+            <meta charset="UTF-8">
+            <title>Crear cuenta en Bakery Story</title>
+        </head>
+
+        <body style="font-family: Arial, sans-serif; background-image: url('cupcake.webp'); background-size: cover; background-position: center;">
+            <header>
+                <nav style="background-color: #e993c0; padding: 20px;">
+                    <!-- IMAGEN A LA IZQUIERDA -->
+                    <img width="40" src="https://static.wikia.nocookie.net/bakerystory/images/0/04/Rose_Glass_Cake_Plate.png/revision/latest/scale-to-width-down/200?cb=20230102140739" title="logo" style="float: left;">
+                    <!-- ENLACES A LA DERECHA -->
+                    <div style="float: right;">
+                        <a href="inicio.html" style="margin-right: 20px; text-decoration: none; color: #ffffff;">Inicio</a>
+                        <a href="login.html" style="text-decoration: none; color: #ffffff;">Iniciar sesión</a>
+                    </div><br>
+                </nav>
+            </header>
+
+            <div id="banner"></div>
+
+            <!-- TITULO -->
+            <h1 style="text-align: center; color: #876146;">Crear una cuenta en Bakery Story&#8482;</h1>
+            <!-- PARRAFO -->
+            <p style="text-align: center; color: #876146;">¡Regístrate para enterarte de eventos y más!</p>
+            
+            <div style="text-align:center;">
+            <!-- FORMULARIO -->
+                <form style="background-color: #e18abeb8; color: #ffffff; padding: 40px;"> 
+
+                    <!-- NOMBRE -->
+                    <label for="nombre" style="display: inline-block; width: 200px; text-align: left;">Nombres:</label>
+                    <input type="text" id="nombres" name="name" style="display: inline-block; width: 400px;" required>
+                    <br><br><br>
+                    <!-- APELLIDOS-->
+                    <label for="apellidos" style="display: inline-block; width: 200px; text-align: left;">Apellidos:</label>
+                    <input type="text" id="apellidos" name="lastname" style="display: inline-block; width: 400px;" required>
+                    <br><br><br>
+                    <!-- USUARIO -->
+                    <label for="usuario" style="display: inline-block; width: 200px; text-align: left;">Usuario:</label>
+                    <input type="text" id="usuario" name="user" style="display: inline-block; width: 400px;" required>
+                    <br><br><br>
+                    <!-- CONTRASEÑA -->
+                    <label for="contraseña" style="display: inline-block; width: 200px; text-align: left;">Contraseña:</label>
+                    <input type="password" id="contraseña" name="password" style="display: inline-block; width: 400px;" required>
+                    <br><br><br>
+                    <!-- EMAIL -->
+                    <label for="email" style="display: inline-block; width: 200px; text-align: left;">Email:</label>
+                    <input type="email" id="email" name="email" style="display: inline-block; width: 400px;" required>
+                    <br><br><br>
+
+                    <!-- FECHA DE NACIMIENTO-->
+                    <label for="fecha" style="display: inline-block; width: 200px; text-align: left;">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="date" style="display: inline-block; width: 400px;" required>
+                    <br><br><br>
+
+                    <!-- IDIOMA -->
+                    <label for="select" style="display: inline-block; text-align: left; width: 200px;">Idioma:</label>
+                    <select id="select" name="select" style="text-align: left; width: 400px;">
+                        <option value="español" selected>Español</option>
+                        <option value="ingles">Inglés</option>
+                        <option value="portugues">Portugués</option>
+                    </select>
+                    <br><br><br>
+
+                    <!-- COLOR -->
+                    <label for="color" style="display: inline-block; width: 200px; text-align: left;">Elija el color de su pastelería:</label>
+                    <input type="color" name="color" id="color" style="display: inline-block; width: 400px; text-align: left;" value="#e993c0">
+                    <br><br><br>
+
+                    <!-- SEXO -->
+                    <label for="sexo" style="display: inline-block; width: 200px; text-align: left;">Sexo:</label>
+                    <div id="sexo" style="display: inline-block;width: 400px; text-align: left;">
+                        <input type="radio" id="femenino" name="sex" required>
+                        <label for="femenino">Femenino</label>
+                    
+                        <input type="radio" id="masculino" name="sex">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    <br><br><br>
+
+                    <!-- TÉRMINOS Y CONDICIONES -->
+                    <label for="checkboxes" style="display: inline-block; width: 200px;"></label>
+                    <div id="checkboxes" style="display: inline-block; width: 400px; text-align: left;">
+                        <input type="checkbox" id="aceptar" name="check" required>
+                        <label for="aceptar">Acepto los términos y condiciones.</label>
+                        <br>
+                        <input type="checkbox" id="correos" name="check">
+                        <label for="correos">Deseo recibir notificaciones en mi correo.</label>
+                    </div>
+                    <br><br><br>
+
+                    <!-- BOTON ENVIAR -->
+                    <button type="submit" style="background-color: #ec8fcc; color: white;">Registrar</button>
+
+                </form>
+
+            </div><br>
+
+            <div style="background-color: #fab882b9; color: #876146;">
+                <table style="margin: auto;">
+    
+                    <tr style="text-align: center;"> <!-- FILAS -->
+                        <th style="width: 300px;">Información</th> <!-- COLUMNAS-->
+                        <th style="width: 300px;">Opciones</th>
+                        <th style="width: 300px;">¡Síguenos!</th>
+                    </tr>
+    
+                    <tr>
+                        <td style="width: 300px; text-align: center;">¿Necesitas ayuda, quieres escribir una reseña o simplemente enterarte de más? Aquí encontrarás información adicional.</td>
+                        <td style="width: 300px; text-align: center;">
+                            <a href="link1.com" target="_blank">Ayuda</a>
+                        </td>
+                        <td style="width: 300px; text-align: center;">
+                            <a href="whatsapp.com" target="_blank">WhatsApp</a>
+                        </td>
+                        <td>
+                            <img width="40" src="https://static.vecteezy.com/system/resources/previews/018/930/564/original/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png" alt="WhatsApp">
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td style="width: 300px; text-align: center;"></td>
+                        <td style="width: 300px; text-align: center;">
+                            <a href="link2.com" target="_blank">Reseñas</a>
+                        </td>
+                        <td style="width: 300px; text-align: center;">
+                            <a href="facebook.com" target="_blank">Facebook</a>
+                        </td>
+                        <td>
+                            <img width="40" src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="Facebook">
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td style="width: 300px; text-align: center;"></td>
+                        <td style="width: 300px; text-align: center;">
+                            <a href="link3.com" target="_blank">Cuenta</a>
+                        </td>
+                        <td style="width: 300px; text-align: center;">
+                            <a href="instagram.com" target="_blank">Instagram</a>
+                        </td>
+                        <td>
+                            <img width="40" src="https://static.vecteezy.com/system/resources/previews/045/934/243/non_2x/instagram-logo-icon-transparent-background-free-png.png" alt="Instagram">
+                        </td>
+                    </tr>
+    
+                </table>
+            </div>
+
+        </body>  
+
+        <br>
+        <footer style="background-color: #e091b3; color: white; text-align: center;">
+            <p>&copy; 2024 Antonella Godoy Munizaga.</p>
+        </footer>
+        
+    </html>
