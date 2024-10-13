@@ -36,6 +36,12 @@ body{
 }
 
 p{
+    text-align: center;
+    color: #876146;
+}
+
+h1{
+    text-align: center; 
     color: #876146;
 }
 
@@ -64,7 +70,7 @@ p{
     flex-wrap: wrap;
 }
 
-.container3{
+.container-inicio{
     background-color: #e18abeb8;
     color: #ffffff;
     display: flex;
@@ -81,6 +87,8 @@ p{
     width: 400px;
 }
 
+
+
 .container-login{
     background-color: #e18abeb8;
     color: #ffffff;
@@ -91,6 +99,38 @@ p{
     padding: 20px;
     margin: auto;
 }
+
+.login-label{
+    display: inline-block; 
+    width: 100px; 
+    text-align: left;
+}
+
+.container-registro{
+    text-align:center;
+    background-color: #e18abeb8; 
+    color: #ffffff; 
+    padding: 40px;
+}
+
+.registro-label{
+    display: inline-block; 
+    width: 200px; 
+    text-align: left;
+}
+
+.registro-input{
+    display: inline-block; 
+    width: 400px;
+    text-align: left;
+}
+
+button{
+    background-color: #ec8fcc; 
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
 
 .container2{
     width: 30%;
@@ -113,25 +153,13 @@ p{
 }
 
 .icono{
-    width: 50px; /* Ancho de los iconos sociales */
-    vertical-align: middle; /* Alineación vertical con el texto */
-    margin-left: 5px; /* Espacio a la izquierda de la imagen */
+    width: 50px; 
+    vertical-align: middle; 
+    margin-left: 5px;
 }
 
 .espacio{
     padding: 15px;
-}
-
-button{
-    background-color: #ec8fcc; 
-    color: #ffffff;
-    border-color: #ffffff;
-}
-
-.login-label{
-    display: inline-block; 
-    width: 100px; 
-    text-align: left;
 }
 
 footer{
