@@ -1,3 +1,7 @@
+*{
+    font-family: Arial, sans-serif;
+}
+
 nav{
     background-color: #e993c0; 
     display: flex;
@@ -19,7 +23,6 @@ nav{
 }
 
 body{
-    font-family: Arial, sans-serif;
     background-image: url('cupcake.webp');
 }
 
