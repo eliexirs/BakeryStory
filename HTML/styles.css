@@ -1,4 +1,22 @@
+nav{
+    background-color: #e993c0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
 
+/*APLICA ESTILO AL CONTENEDOR DE LOS LINKS DE NAVEGACIÓN*/
+.links-nav{ 
+    margin-left: auto;
+}
+
+/*APLICA ESTILO A LOS LINKS DENTRO DEL CONTENEDOR*/
+.links-nav a{
+    text-decoration: none; 
+    color: #ffffff;
+    margin-left: 10px;
+}
 
 body{
     font-family: Arial, sans-serif;
@@ -19,3 +37,4 @@ footer{
     color: white; 
     text-align: center;
 }
+
