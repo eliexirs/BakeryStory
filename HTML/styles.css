@@ -10,6 +10,10 @@ nav{
     padding: 5px 20px;
 }
 
+a{
+    color: #876146;
+}
+
 #logo{
     width: 40px;
     height: auto;
@@ -60,9 +64,37 @@ p{
     flex-wrap: wrap;
 }
 
+.container2{
+    width: 30%;
+    min-width: 250px;
+    margin: 10px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container2{
+    background-color: #fab882b9; 
+    color: #876146;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.icono {
+    width: 50px; /* Ancho de los iconos sociales */
+    vertical-align: middle; /* Alineación vertical con el texto */
+    margin-left: 5px; /* Espacio a la izquierda de la imagen */
+}
+
+.espacio{
+    padding: 15px;
+}
+
 footer{
     background-color: #e091b3; 
-    color: white; 
     text-align: center;
 }
 
