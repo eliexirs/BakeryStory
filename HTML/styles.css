@@ -1,3 +1,5 @@
+
+
 body{
     font-family: Arial, sans-serif;
     background-image: url('cupcake.webp');
@@ -10,4 +12,10 @@ body{
     padding: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+footer{
+    background-color: #e091b3; 
+    color: white; 
+    text-align: center;
 }
