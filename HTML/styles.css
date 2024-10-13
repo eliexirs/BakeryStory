@@ -64,6 +64,30 @@ p{
     flex-wrap: wrap;
 }
 
+
+
+
+.container3{
+    background-color: #e18abeb8;
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.imagen-aside{
+    flex: 0 0 auto;
+    text-align: center;
+    margin-right: 20px;
+    width: 400px;
+}
+
+
+
+
+
+
 .container2{
     width: 30%;
     min-width: 250px;
@@ -81,9 +105,10 @@ p{
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 10px;
+    margin-top: 20px;
 }
 
-.icono {
+.icono{
     width: 50px; /* Ancho de los iconos sociales */
     vertical-align: middle; /* Alineación vertical con el texto */
     margin-left: 5px; /* Espacio a la izquierda de la imagen */
