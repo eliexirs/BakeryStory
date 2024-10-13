@@ -11,7 +11,7 @@
             <header>
                 <nav>
                     <!-- IMAGEN A LA IZQUIERDA -->
-                    <img width="40" src="https://static.wikia.nocookie.net/bakerystory/images/0/04/Rose_Glass_Cake_Plate.png/revision/latest/scale-to-width-down/200?cb=20230102140739" title="logo" style="float: left;">
+                    <img id="logo" src="https://static.wikia.nocookie.net/bakerystory/images/0/04/Rose_Glass_Cake_Plate.png/revision/latest/scale-to-width-down/200?cb=20230102140739" title="logo">
                     <!-- ENLACES A LA DERECHA -->
                     <div class="links-nav">
                         <a href="inicio.html">Inicio</a>
@@ -23,26 +23,22 @@
             <!-- BANNER -->
             <div id="banner"></div>
 
-            <div style="text-align:center; color: #876146;">
-                <table style="margin: auto;">
-                    <tr>
-                        <th style="width: 500px;">
-                            <img width="360" src="https://i.pinimg.com/736x/31/0c/48/310c48ceec88a4c21055a2b3397ce632.jpg" alt="IMAGEN">
-                        </th>
-                        <th style="width: 500px;">
-                            <iframe width="360" height="215" src="https://www.youtube.com/embed/5TfGTbAzj-w?si=Zw7rvGESj7iV6rne" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </th>
-                        <th style="width: 500px;">
-                            <img width="360" src="https://games.lol/wp-content/uploads/2021/01/Bakery-Story-download-pc.png" alt="IMAGEN">
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>¡Diseña tu pastelería a tu gusto, con miles de estilos de decoraciones para elegir!</td>
-                        <td>¡Echa un vistazo al modo de juego de Bakery Story&#8482;!</td>
-                        <td>¡Encuentra más personas en la amplia comunidad de Bakery Story&#8482; e invita a tus amigos!</td>
-                    </tr>
-                </table>
-            </div><br>
+        <div class="flex-container">
+            <section class="container">
+                <img width="360" src="https://i.pinimg.com/736x/31/0c/48/310c48ceec88a4c21055a2b3397ce632.jpg" alt="IMAGEN">
+                <p>¡Diseña tu pastelería a tu gusto, con miles de estilos de decoraciones para elegir!</p>
+            </section>
+
+            <section class="container">
+                <iframe width="360" height="205" src="https://www.youtube.com/embed/5TfGTbAzj-w?si=Zw7rvGESj7iV6rne" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>¡Echa un vistazo al modo de juego de Bakery Story™!</p>
+            </section>
+
+            <section class="container">
+                <img width="360" src="https://games.lol/wp-content/uploads/2021/01/Bakery-Story-download-pc.png" alt="IMAGEN">
+                <p>¡Encuentra más personas en la amplia comunidad de Bakery Story™ e invita a tus amigos!</p>
+            </section>
+        </div>
 
             <div style="background-color: #e18abeb8; color: #ffffff;">
                 <table>
@@ -52,7 +48,7 @@
                         </td>
                         <td style="text-align: center;">
                             <h1>Bakery Story&#8482;</h1>
-                            <p>¡Prepara los mejores postres y diseña la pastelería de tus sueños con Bakery Story&#8482;! No te olvides de tener a tus clientes contentos y bien alimentados con la decoración más espectacular y los pasteles más exquisitos. Todas las semanas lanzamos nuevos contenidos que mejoran el juego constantemente.</p>
+                            <p class="p">¡Prepara los mejores postres y diseña la pastelería de tus sueños con Bakery Story&#8482;! No te olvides de tener a tus clientes contentos y bien alimentados con la decoración más espectacular y los pasteles más exquisitos. Todas las semanas lanzamos nuevos contenidos que mejoran el juego constantemente.</p>
                         </td>
                     </tr>
                 </table>
@@ -113,6 +109,6 @@
 
         <br>
         <footer>
-            <p>&copy; 2024 Antonella Godoy Munizaga.</p>
+            <p class="p">&copy; 2024 Antonella Godoy Munizaga.</p>
         </footer>
     </html>

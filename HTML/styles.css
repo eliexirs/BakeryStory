@@ -10,6 +10,11 @@ nav{
     padding: 5px 20px;
 }
 
+#logo{
+    width: 40px;
+    height: auto;
+}
+
 /*APLICA ESTILO AL CONTENEDOR DE LOS LINKS DE NAVEGACIÓN*/
 .links-nav{ 
     margin-left: auto;
@@ -26,6 +31,14 @@ body{
     background-image: url('cupcake.webp');
 }
 
+p{
+    color: #876146;
+}
+
+.p{
+    color: #ffffff
+}
+
 #banner{
     background-image: url(banner.png); 
     background-size: cover; 
@@ -33,6 +46,18 @@ body{
     padding: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.container{
+    text-align:center;
+    width: 360px; 
+    margin: 40px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 footer{
