@@ -162,6 +162,39 @@ button{
     padding: 15px;
 }
 
+
+
+
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    background-color: #e18abeb8;
+    padding: 20px;
+}
+
+
+
+.grid-container .left, 
+.grid-container .center,
+.grid-container .right{
+    display: flex;
+    flex-direction: column; /* Alinea las imágenes en columna */
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.grid-container img {
+    width: 100px; /* Asegura que las imágenes ocupen todo el ancho disponible */
+    height: 100px; /* Mantiene la proporción de las imágenes */
+    border: 5px solid #876146;
+    background-color: #fcd8b9;
+}
+
 footer{
     background-color: #e091b3; 
     text-align: center;
