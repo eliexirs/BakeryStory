@@ -1,0 +1,120 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.links-nav{
+    width: 200px;
+    background-color: #f6d3ab; 
+    padding: 5px 20px; 
+    position: fixed;
+    height: 100%;
+}
+
+.links-nav a{
+    text-decoration: none;
+    margin: 10px;
+    display: block;
+}
+
+.links-nav h2{
+    display: flex;
+    align-items: center;
+}
+
+.links-nav h2 .icon{
+    vertical-align: middle;
+    width: 10px;
+}
+
+a{
+    color: #876146;
+}
+
+#logo{
+    width: 40px;
+}
+
+h1{
+    color: #876146;
+}
+
+h2{
+    color: #876146;
+}
+
+p{
+    color: #876146;
+}
+
+body{
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/76941dd5-be18-4cda-ac4c-ce8a28fa8500/d8mntmg-f8b9e380-dc8b-4413-81b8-c4909e56a2a3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc2OTQxZGQ1LWJlMTgtNGNkYS1hYzRjLWNlOGEyOGZhODUwMFwvZDhtbnRtZy1mOGI5ZTM4MC1kYzhiLTQ0MTMtODFiOC1jNDkwOWU1NmEyYTMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.V_tS0umiipT40Xrvd5Yia8oSUPGaUBICeuqmCmvcKYo');
+    background-size: cover;
+}
+
+#banner{
+    background-image: url(banner.png); 
+    background-size: cover; 
+    background-position: center; 
+    padding: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.titular{
+    background-color: #fcd359c4;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 220px;
+    flex-grow: 1;
+}
+
+#descargar{
+    display: inline-block;
+    padding: 20px;
+    background-color: #876146;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+#descargar:hover{
+    background-color: #8cd043; /*Nuevo color al pasar el cursor por encima*/
+    transform: scale(1.1); /*Aumenta el tamaño al pasar el cursor por*/
+}
+
+.contenido2{
+    display: flex;
+    background-color: #f6d3ab;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    margin-left: 220px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.video-container{
+    flex: 1;
+}
+
+.text-container{
+    flex: 1;
+}
+
+.contenido{
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fcd359c4;
+    margin-left: 220px;
+    flex-grow: 1;
+}
+
+
+
