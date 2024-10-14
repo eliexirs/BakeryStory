@@ -116,5 +116,50 @@ body{
     flex-grow: 1;
 }
 
+.container2{
+    width: 30%;
+    min-width: 250px;
+    margin: 10px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container2{
+    background-color: #fab882b9; 
+    color: #876146;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 220px;
+}
+
+.icono{
+    width: 50px; 
+    vertical-align: middle; 
+    margin-left: 5px;
+}
+
+.espacio{
+    padding: 15px;
+}
+
+.footer-container{
+    margin-left: 220px;
+}
 
 
+footer{
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9c66f; 
+    text-align: center;
+    display: inline-block;
+    margin-left: 220px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
