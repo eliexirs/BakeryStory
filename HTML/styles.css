@@ -88,8 +88,6 @@ h1{
     width: 400px;
 }
 
-
-
 .container-login{
     background-color: #e18abeb8;
     color: #ffffff;
@@ -195,7 +193,7 @@ button:hover {
 .grid-container img {
     width: 100px;
     height: 100px; 
-    border: 5px solid #876146;
+    border: 5px solid #fab882b9;
     background-color: #fcd8b9;
 }
 
@@ -213,33 +211,120 @@ button:hover {
     margin: 10px;
     font-size: 15px;
     border: 3px solid #e0bc3c;
-    box-sizing: border-box; 
-
-
+    box-sizing: border-box;
 }
-.item1,
-.item2,
-.item3,
-.item4{
-    flex: 20px; 
+
+.item {
+    flex: 20px;
     padding: 10px;
     border: 3px solid #e0bc3c;
+    transition: transform 0.3s;
 }
+
+.item:hover {
+    transform: scale(1.05);
+}
+
 
 
 .flex-container3 img{
     width: 200px;
-    height:200px;
+    height: 200px;
 }
 
-.item1, .item2, .item3, .item4 {
-    transition: transform 0.3s;
+
+
+
+
+
+
+
+.flex-container4 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    border: 5px solid #fab882b9;
+    color: white;
+    padding: 20px;
 }
 
-.item1:hover, .item2:hover, .item3:hover, .item4:hover {
-    transform: scale(1.05);
+.right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e18abeb8;
+    padding: 30px;
+    border: 5px solid #e07db9;
+    text-align: center;
 }
 
+.image-box {
+    background-color: #fab882b9;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    border: 5px solid #fcd359c4;
+}
+
+.image-box img{
+    width: 300px;
+}
+
+
+.flex-container5{
+    background-color: #fcd359c4;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 20px;
+    margin: 20px;;
+    border: 5px solid #fab882b9;
+    color: white;
+    padding: 20px;
+
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los campos */
+}
+
+.form-section input,
+.form-section textarea {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.form-section textarea {
+    resize: vertical; /* Permite redimensionar solo verticalmente */
+    height: 150px; /* Altura mínima para el área de texto */
+}
+
+.map-section img{
+    width: 100%;
+}
+
+.pre-footer {
+    color: #ffffff;
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: space-around;
+    background-color: #e091b3;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.importante{
+    color: #d07b43;
+    font-weight: bold;
+}
 
 footer{
     background-color: #e091b3; 
