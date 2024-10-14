@@ -1,13 +1,13 @@
 *{
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /*Fuente universal*/
 }
 
 nav{
     background-color: #e993c0; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px;
+    display: flex; /*Diseño flexible*/
+    justify-content: space-between; /*Separación del logo de los links de navegación*/
+    align-items: center; /*Alinea los items verticalmente al centro*/
+    padding: 5px 20px; 
 }
 
 a{
@@ -16,19 +16,18 @@ a{
 
 #logo{
     width: 40px;
-    height: auto;
 }
 
-/*APLICA ESTILO AL CONTENEDOR DE LOS LINKS DE NAVEGACIÓN*/
+/*Aplica estilo al contenedor de los links de navegación*/
 .links-nav{ 
-    margin-left: auto;
+    margin-left: auto; /*Alinea todos los links de navegación a la derecha*/
 }
 
-/*APLICA ESTILO A LOS LINKS DENTRO DEL CONTENEDOR*/
+/*Aplica estilos a los links de navegación*/
 .links-nav a{
     text-decoration: none; 
     color: #ffffff;
-    margin-left: 10px;
+    margin: 10px; /*Margen entre los links*/
 }
 
 body{
@@ -45,6 +44,7 @@ h1{
     color: #876146;
 }
 
+/*Para hacer parrafos color blanco*/
 .p{
     color: #ffffff
 }
@@ -66,9 +66,9 @@ h1{
 }
 
 .flex-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: flex; /*Diseño flexible*/
+    justify-content: center; /*Los items flexibles se alinean al centro*/
+    flex-wrap: wrap; /*Los items flexibles se reajustan si no hay espacio*/
 }
 
 .container-inicio{
@@ -82,7 +82,7 @@ h1{
 }
 
 .imagen-aside{
-    flex: 0 0 auto;
+    flex: 0 0 auto; /*La imagen no crece ni se hace más pequeña*/
     text-align: center;
     margin-right: 20px;
     width: 400px;
@@ -130,12 +130,12 @@ button{
     border-color: #ffffff;
     border-radius: 8px;
     padding: 10px;
-    transition: background-color 0.5s ease, transform 0.3s ease; /* Transiciones en el color de fondo y transformación */
+    transition: background-color 0.5s ease, transform 0.3s ease; /*Transición*/
 }
 
-button:hover {
-    background-color: #d07b43; /* Nuevo color al pasar el cursor */
-    transform: scale(1.1); /* Aumentar tamaño ligeramente */
+button:hover{
+    background-color: #d07b43; /*Nuevo color al pasar el cursor por encima*/
+    transform: scale(1.1); /*Aumenta el tamaño al pasar el cursor por*/
 }
 
 
@@ -190,7 +190,7 @@ button:hover {
     padding: 30px;
 }
 
-.grid-container img {
+.grid-container img{
     width: 100px;
     height: 100px; 
     border: 5px solid #fab882b9;
@@ -214,32 +214,23 @@ button:hover {
     box-sizing: border-box;
 }
 
-.item {
+.item{
     flex: 20px;
     padding: 10px;
     border: 3px solid #e0bc3c;
     transition: transform 0.3s;
 }
 
-.item:hover {
+.item:hover{
     transform: scale(1.05);
 }
-
-
 
 .flex-container3 img{
     width: 200px;
     height: 200px;
 }
 
-
-
-
-
-
-
-
-.flex-container4 {
+.flex-container4{
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
@@ -248,8 +239,9 @@ button:hover {
     padding: 20px;
 }
 
-.right-column {
+#comunidad{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #e18abeb8;
@@ -289,25 +281,25 @@ button:hover {
 
 }
 
-.form-section form {
+.form-section form{
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espacio entre los campos */
+    gap: 10px;
 }
 
 .form-section input,
 .form-section textarea {
     padding: 10px;
     font-size: 14px;
-    width: 100%; /* Ocupa todo el ancho disponible */
+    width: 100%; /* Ocupa todo el espacio disponible */
 }
 
 .form-section textarea {
-    resize: vertical; /* Permite redimensionar solo verticalmente */
-    height: 150px; /* Altura mínima para el área de texto */
+    resize: vertical; /*Redimensiona verticalmente el formulario*/
+    height: 150px; 
 }
 
-.map-section img{
+#map img{
     width: 100%;
 }
 
