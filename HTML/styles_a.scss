@@ -8,7 +8,19 @@ $browncolor: #876146;
 $whitecolor: #ffffff;
 $font-family: Arial, sans-serif;
 
+@mixin flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+@mixin gridContainer ($columnas){
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    color: $whitecolor;
+    border: 5px solid #fab882b9;
+    grid-template-columns: $columnas;
+}
 
  
 
@@ -59,9 +71,8 @@ h1{
 }
 
 .flex-container{
-    display: flex; /*Diseño flexible*/
+    @include flexContainer();
     justify-content: center; /*Los items flexibles se alinean al centro*/
-    flex-wrap: wrap; /*Los items flexibles se reajustan si no hay espacio*/
 }
 
 .container-inicio{
@@ -110,11 +121,10 @@ button:hover{
 }
 
 .flex-container2{
-    background-color: #fab882b9; 
+    @include flexContainer();
+    background-color: #fab882b9; //////////////////
     color: $browncolor;
-    display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     padding: 5px;
     margin-top: 20px;
 }
@@ -157,9 +167,8 @@ button:hover{
 
 
 .flex-container3{
-    display: flex;
+    @include flexContainer();
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .flex-container3 div{
@@ -189,13 +198,10 @@ button:hover{
 }
 
 .grid-container2{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    border: 5px solid #fab882b9;
-    color: $whitecolor;
-    padding: 20px;
+    @include gridContainer(1fr 2fr);
 }
+
+
 
 #comunidad{
     display: flex;
@@ -228,19 +234,10 @@ button:hover{
 
 
 .grid-container3{
+    @include gridContainer(0.8fr 1fr);
     background-color: #fcd359c4;
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
-    gap: 20px;
     margin: 20px;
-    border: 5px solid #fab882b9;
-    color: $whitecolor;
-    padding: 20px;
-
 }
-
-
-
 
 
 .pre-footer {

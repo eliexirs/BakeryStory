@@ -125,9 +125,9 @@ h1 {
 }
 
 .flex-container {
-  display: flex; /*Diseño flexible*/
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center; /*Los items flexibles se alinean al centro*/
-  flex-wrap: wrap; /*Los items flexibles se reajustan si no hay espacio*/
 }
 
 .container-inicio {
@@ -172,11 +172,11 @@ button:hover {
 }
 
 .flex-container2 {
+  display: flex;
+  flex-wrap: wrap;
   background-color: rgba(250, 184, 130, 0.7254901961);
   color: #876146;
-  display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   padding: 5px;
   margin-top: 20px;
 }
@@ -219,8 +219,8 @@ button:hover {
 
 .flex-container3 {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .flex-container3 div {
@@ -251,11 +251,11 @@ button:hover {
 
 .grid-container2 {
   display: grid;
-  grid-template-columns: 1fr 2fr;
   gap: 20px;
-  border: 5px solid rgba(250, 184, 130, 0.7254901961);
-  color: #ffffff;
   padding: 20px;
+  color: #ffffff;
+  border: 5px solid rgba(250, 184, 130, 0.7254901961);
+  grid-template-columns: 1fr 2fr;
 }
 
 #comunidad {
@@ -288,14 +288,14 @@ button:hover {
 }
 
 .grid-container3 {
-  background-color: rgba(252, 211, 89, 0.768627451);
   display: grid;
-  grid-template-columns: 0.8fr 1fr;
   gap: 20px;
-  margin: 20px;
-  border: 5px solid rgba(250, 184, 130, 0.7254901961);
-  color: #ffffff;
   padding: 20px;
+  color: #ffffff;
+  border: 5px solid rgba(250, 184, 130, 0.7254901961);
+  grid-template-columns: 0.8fr 1fr;
+  background-color: rgba(252, 211, 89, 0.768627451);
+  margin: 20px;
 }
 
 .pre-footer {
