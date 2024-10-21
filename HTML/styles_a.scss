@@ -1,34 +1,22 @@
+@import "navegador";
+
+$pinkcolor: #e18abeb8;
+$browncolor: #876146;
+
+
+
+
+
 *{
     font-family: Arial, sans-serif; /*Fuente universal*/
 }
 
-nav{
-    background-color: #e993c0; 
-    display: flex; /*Diseño flexible*/
-    justify-content: space-between; /*Separación del logo de los links de navegación*/
-    align-items: center; /*Alinea los items verticalmente al centro*/
-    padding: 5px 20px; 
-}
 
 a{
-    color: #876146;
+    color: $browncolor;
 }
 
-#logo{
-    width: 40px;
-}
 
-/*Aplica estilo al contenedor de los links de navegación*/
-.links-nav{ 
-    margin-left: auto; /*Alinea todos los links de navegación a la derecha*/
-}
-
-/*Aplica estilos a los links de navegación*/
-.links-nav a{
-    text-decoration: none; 
-    color: #ffffff;
-    margin: 10px; /*Margen entre los links*/
-}
 
 body{
     background-image: url('cupcake.webp');
@@ -36,12 +24,12 @@ body{
 
 p{
     text-align: center;
-    color: #876146;
+    color: $browncolor;
 }
 
 h1{
     text-align: center; 
-    color: #876146;
+    color: $browncolor;
 }
 
 /*Para hacer parrafos color blanco*/
@@ -72,7 +60,7 @@ h1{
 }
 
 .container-inicio{
-    background-color: #e18abeb8;
+    background-color: $pinkcolor;
     color: #ffffff;
     display: flex;
     text-align: center;
@@ -89,7 +77,7 @@ h1{
 }
 
 .container-login{
-    background-color: #e18abeb8;
+    background-color: $pinkcolor;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -107,7 +95,7 @@ h1{
 
 .container-registro{
     text-align:center;
-    background-color: #e18abeb8; 
+    background-color: $pinkcolor; 
     color: #ffffff; 
     padding: 40px;
 }
@@ -151,7 +139,7 @@ button:hover{
 
 .flex-container2{
     background-color: #fab882b9; 
-    color: #876146;
+    color: $browncolor;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -184,7 +172,7 @@ button:hover{
     align-items: center;
     justify-content: center;
     gap: 10px; 
-    background-color: #e18abeb8;
+    background-color: $pinkcolor;
     padding: 30px;
 }
 
@@ -242,7 +230,7 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #e18abeb8;
+    background-color: $pinkcolor;
     padding: 30px;
     border: 5px solid #e07db9;
     text-align: center;

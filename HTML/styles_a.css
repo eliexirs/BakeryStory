@@ -1,18 +1,10 @@
 @charset "UTF-8";
-* {
-  font-family: Arial, sans-serif; /*Fuente universal*/
-}
-
 nav {
   background-color: #e993c0;
   display: flex; /*Diseño flexible*/
   justify-content: space-between; /*Separación del logo de los links de navegación*/
   align-items: center; /*Alinea los items verticalmente al centro*/
   padding: 5px 20px;
-}
-
-a {
-  color: #876146;
 }
 
 #logo {
@@ -29,6 +21,14 @@ a {
   text-decoration: none;
   color: #ffffff;
   margin: 10px; /*Margen entre los links*/
+}
+
+* {
+  font-family: Arial, sans-serif; /*Fuente universal*/
+}
+
+a {
+  color: #876146;
 }
 
 body {
