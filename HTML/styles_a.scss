@@ -1,5 +1,5 @@
 @import "navegador";
-@import "moduloregistro";
+@import "moduloregistro"; 
 @import "modulologin";
 @import "modulovariables";
 
@@ -49,6 +49,7 @@ p{
 }
 
 h1{
+    font-family: 'Playwrite GB S', cursive;
     @include texto();
 }
 

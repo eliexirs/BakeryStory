@@ -26,8 +26,16 @@ a{
 /*Aplica estilos a los links de navegación*/
 .links-nav a{
     text-decoration: none; 
+    color: #b37f59;
+    margin: 5px; /*Margen entre los links*/
+    border-radius: 5px;
+    background-color: #f5aed4;
+    border: 3px solid #b37f59;
+    padding: 10px;
+}
+
+.links-nav a:hover{
     color: #ffffff;
-    margin: 10px; /*Margen entre los links*/
 }
 
 body{
@@ -42,6 +50,7 @@ p{
 h1{
     text-align: center; 
     color: #876146;
+    font-family: 'Playwrite GB S', cursive;
 }
 
 /*Para hacer parrafos color blanco*/
@@ -193,6 +202,12 @@ button:hover{
     height: 100px; 
     border: 5px solid #fab882b9;
     background-color: #fcd8b9;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+    box-shadow: 3px 3px 6px #333;
+}
+
+.grid-container img:hover{
+    transform: scale(1.1);
 }
 
 

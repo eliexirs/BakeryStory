@@ -19,8 +19,16 @@ nav {
 /*Aplica estilos a los links de navegación*/
 .links-nav a {
   text-decoration: none;
+  color: #b37f59;
+  margin: 5px; /*Margen entre los links*/
+  border-radius: 5px;
+  background-color: #f5aed4;
+  border: 3px solid #b37f59;
+  padding: 10px;
+}
+
+.links-nav a:hover {
   color: #ffffff;
-  margin: 10px; /*Margen entre los links*/
 }
 
 .container-registro {
@@ -77,6 +85,7 @@ p {
 }
 
 h1 {
+  font-family: "Playwrite GB S", cursive;
   text-align: center;
   color: #876146;
 }
@@ -188,11 +197,17 @@ button:hover {
   padding: 30px;
 }
 
-.grid-container img {
+.grid-container img{
   width: 100px;
-  height: 100px;
-  border: 5px solid rgba(250, 184, 130, 0.7254901961);
+  height: 100px; 
+  border: 5px solid #fab882b9;
   background-color: #fcd8b9;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+  box-shadow: 3px 3px 6px #333;
+}
+
+.grid-container img:hover{
+  transform: scale(1.1);
 }
 
 .flex-container3 {
