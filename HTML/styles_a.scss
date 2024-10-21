@@ -1,13 +1,6 @@
 @import "navegador";
 @import "moduloregistro";
 @import "modulologin";
-@import "moduloform";
-
-$pinkcolor: #e18abeb8;
-$browncolor: #876146;
-$whitecolor: #ffffff;
-$font-family: Arial, sans-serif;
-$size: 20px;
 
 @mixin texto{
     text-align: center; 
