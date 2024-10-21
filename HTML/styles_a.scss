@@ -8,6 +8,11 @@ $browncolor: #876146;
 $whitecolor: #ffffff;
 $font-family: Arial, sans-serif;
 
+@mixin texto{
+    text-align: center; 
+    color: $browncolor;
+}
+
 @mixin flexContainer {
     display: flex;
     flex-wrap: wrap;
@@ -40,14 +45,14 @@ body{
 }
 
 p{
-    text-align: center;
-    color: $browncolor;
+    @include texto();
 }
 
 h1{
-    text-align: center; 
-    color: $browncolor;
+    @include texto();
 }
+
+
 
 /*Para hacer parrafos color blanco*/
 .p{
