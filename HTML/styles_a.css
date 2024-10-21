@@ -119,8 +119,8 @@ h1 {
 }
 
 .container {
-  text-align: center;
   width: 360px;
+  text-align: center;
   margin: 40px;
 }
 
@@ -134,9 +134,9 @@ h1 {
   background-color: rgba(225, 138, 190, 0.7215686275);
   color: #ffffff;
   display: flex;
-  text-align: center;
   align-items: center;
   padding: 20px;
+  text-align: center;
   margin: auto;
 }
 

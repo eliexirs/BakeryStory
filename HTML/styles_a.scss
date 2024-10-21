@@ -27,6 +27,11 @@ $font-family: Arial, sans-serif;
     grid-template-columns: $columnas;
 }
 
+@mixin container ($margin){
+    text-align: center;
+    margin: $margin;
+}
+
  
 
 *{
@@ -70,9 +75,8 @@ h1{
 }
 
 .container{
-    text-align:center;
     width: 360px; 
-    margin: 40px;
+    @include container(40px)
 }
 
 .flex-container{
@@ -84,11 +88,11 @@ h1{
     background-color: $pinkcolor;
     color: $whitecolor;
     display: flex;
-    text-align: center;
     align-items: center;
     padding: 20px;
-    margin: auto;
+    @include container(auto)
 }
+
 
 .imagen-aside{
     flex: 0 0 auto; /*La imagen no crece ni se hace más pequeña*/
