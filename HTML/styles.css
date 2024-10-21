@@ -28,9 +28,9 @@ a{
     text-decoration: none; 
     color: #b37f59;
     margin: 5px; /*Margen entre los links*/
-    border-radius: 5px;
+    
     background-color: #f5aed4;
-    border: 3px solid #b37f59;
+    border: 3px dashed #b37f59;
     padding: 10px;
 }
 
