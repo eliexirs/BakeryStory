@@ -23,6 +23,64 @@ nav {
   margin: 10px; /*Margen entre los links*/
 }
 
+.container-registro {
+  text-align: center;
+  background-color: rgba(225, 138, 190, 0.7215686275);
+  color: #ffffff;
+  padding: 40px;
+}
+
+.registro-label {
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+}
+
+.registro-input {
+  display: inline-block;
+  width: 400px;
+  text-align: left;
+}
+
+.container-login {
+  background-color: rgba(225, 138, 190, 0.7215686275);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+}
+
+.login-label {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column; /*Para ponerlo en una columna*/
+  gap: 10px;
+}
+
+.form-section input,
+.form-section textarea {
+  padding: 10px;
+  font-size: 15px;
+  width: 100%; /* Ocupa todo el espacio disponible */
+}
+
+.form-section textarea {
+  resize: vertical; /*Redimensiona solo verticalmente el Mensaje del formulario*/
+  height: 150px;
+}
+
+#map img {
+  width: 100%;
+}
+
 * {
   font-family: Arial, sans-serif; /*Fuente universal*/
 }
@@ -87,23 +145,6 @@ h1 {
   text-align: center;
   margin-right: 20px;
   width: 400px;
-}
-
-.container-login {
-  background-color: rgba(225, 138, 190, 0.7215686275);
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  padding: 20px;
-  margin: auto;
-}
-
-.login-label {
-  display: inline-block;
-  width: 100px;
-  text-align: left;
 }
 
 button {
@@ -255,28 +296,6 @@ button:hover {
   border: 5px solid rgba(250, 184, 130, 0.7254901961);
   color: #ffffff;
   padding: 20px;
-}
-
-.form-section form {
-  display: flex;
-  flex-direction: column; /*Para ponerlo en una columna*/
-  gap: 10px;
-}
-
-.form-section input,
-.form-section textarea {
-  padding: 10px;
-  font-size: 15px;
-  width: 100%; /* Ocupa todo el espacio disponible */
-}
-
-.form-section textarea {
-  resize: vertical; /*Redimensiona solo verticalmente el Mensaje del formulario*/
-  height: 150px;
-}
-
-#map img {
-  width: 100%;
 }
 
 .pre-footer {
