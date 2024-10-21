@@ -1,5 +1,7 @@
 @import "navegador";
 @import "moduloregistro";
+@import "modulologin";
+@import "moduloform";
 
 $pinkcolor: #e18abeb8;
 $browncolor: #876146;
@@ -8,7 +10,7 @@ $font-family: Arial, sans-serif;
 
 
 
-
+ 
 
 *{
     font-family: $font-family; /*Fuente universal*/
@@ -79,22 +81,7 @@ h1{
     width: 400px;
 }
 
-.container-login{
-    background-color: $pinkcolor;
-    color: $whitecolor;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
-    margin: auto;
-}
 
-.login-label{
-    display: inline-block; 
-    width: 100px; 
-    text-align: left;
-}
 
 
 button{
@@ -252,27 +239,9 @@ button:hover{
 
 }
 
-.form-section form{
-    display: flex; 
-    flex-direction: column; /*Para ponerlo en una columna*/
-    gap: 10px;
-}
 
-.form-section input,
-.form-section textarea {
-    padding: 10px;
-    font-size: 15px;
-    width: 100%; /* Ocupa todo el espacio disponible */
-}
 
-.form-section textarea {
-    resize: vertical; /*Redimensiona solo verticalmente el Mensaje del formulario*/
-    height: 150px; 
-}
 
-#map img{
-    width: 100%;
-}
 
 .pre-footer {
     color: $whitecolor;
