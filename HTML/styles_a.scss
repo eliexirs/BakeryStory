@@ -7,6 +7,7 @@ $pinkcolor: #e18abeb8;
 $browncolor: #876146;
 $whitecolor: #ffffff;
 $font-family: Arial, sans-serif;
+$size: 20px;
 
 @mixin texto{
     text-align: center; 
@@ -20,8 +21,8 @@ $font-family: Arial, sans-serif;
 
 @mixin gridContainer ($columnas){
     display: grid;
-    gap: 20px;
-    padding: 20px;
+    gap: $size;
+    padding: $size;
     color: $whitecolor;
     border: 5px solid #fab882b9;
     grid-template-columns: $columnas;
@@ -69,7 +70,7 @@ h1{
     background-size: cover; 
     background-position: center; 
     padding: 100px;
-    margin-top: 20px;
+    margin-top: $size;
     margin-bottom: 20px;
     border-radius: 10px;
 }
@@ -89,7 +90,7 @@ h1{
     color: $whitecolor;
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: $size;
     @include container(auto)
 }
 
@@ -97,7 +98,7 @@ h1{
 .imagen-aside{
     flex: 0 0 auto; /*La imagen no crece ni se hace más pequeña*/
     text-align: center;
-    margin-right: 20px;
+    margin-right: $size;
     width: 400px;
 }
 
@@ -135,7 +136,7 @@ button:hover{
     color: $browncolor;
     justify-content: space-around;
     padding: 5px;
-    margin-top: 20px;
+    margin-top: $size;
 }
 
 .icono{
@@ -151,8 +152,8 @@ button:hover{
 .grid-container{
     display: grid;
     grid-template-columns: 0.2fr 2fr 0.2fr;
-    gap: 20px;
-    padding: 20px;
+    gap: $size;
+    padding: $size;
 }
 
 .grid-container .left, 
@@ -191,7 +192,7 @@ button:hover{
 }
 
 .item{
-    flex: 20px;
+    flex: $size;
     padding: 10px;
     border: 3px solid #e0bc3c;
     transition: transform 0.3s;
@@ -210,7 +211,27 @@ button:hover{
     @include gridContainer(1fr 2fr);
 }
 
+.form-section form{
+    display: flex; 
+    flex-direction: column; /*Para ponerlo en una columna*/
+    gap: 10px;
+}
 
+.form-section input,
+.form-section textarea {
+    padding: 10px;
+    font-size: 15px;
+    width: 100%; /* Ocupa todo el espacio disponible */
+}
+
+.form-section textarea {
+    resize: vertical; /*Redimensiona solo verticalmente el Mensaje del formulario*/
+    height: 150px; 
+}
+
+#map img{
+    width: 100%;
+}
 
 #comunidad{
     display: flex;
@@ -245,7 +266,7 @@ button:hover{
 .grid-container3{
     @include gridContainer(0.8fr 1fr);
     background-color: #fcd359c4;
-    margin: 20px;
+    margin: $size;
 }
 
 
@@ -255,7 +276,7 @@ button:hover{
     justify-content: space-around;
     background-color: #e091b3;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: $size;
 }
 
 .importante{

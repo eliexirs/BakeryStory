@@ -258,6 +258,28 @@ button:hover {
   grid-template-columns: 1fr 2fr;
 }
 
+.form-section form {
+  display: flex;
+  flex-direction: column; /*Para ponerlo en una columna*/
+  gap: 10px;
+}
+
+.form-section input,
+.form-section textarea {
+  padding: 10px;
+  font-size: 15px;
+  width: 100%; /* Ocupa todo el espacio disponible */
+}
+
+.form-section textarea {
+  resize: vertical; /*Redimensiona solo verticalmente el Mensaje del formulario*/
+  height: 150px;
+}
+
+#map img {
+  width: 100%;
+}
+
 #comunidad {
   display: flex;
   flex-direction: column;
