@@ -1,0 +1,23 @@
+nav{
+    background-color: #e993c0; 
+    display: flex; /*Diseño flexible*/
+    justify-content: space-between; /*Separación del logo de los links de navegación*/
+    align-items: center; /*Alinea los items verticalmente al centro*/
+    padding: 5px 20px; 
+}
+
+#logo{
+    width: 40px;
+}
+
+/*Aplica estilo al contenedor de los links de navegación*/
+.links-nav{ 
+    margin-left: auto; /*Alinea todos los links de navegación a la derecha*/
+}
+
+/*Aplica estilos a los links de navegación*/
+.links-nav a{
+    text-decoration: none; 
+    color: #ffffff;
+    margin: 10px; /*Margen entre los links*/
+}
