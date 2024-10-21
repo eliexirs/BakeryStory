@@ -1,0 +1,18 @@
+.container-registro{
+    text-align:center;
+    background-color: $pinkcolor; 
+    color: $whitecolor; 
+    padding: 40px;
+}
+
+.registro-label{
+    display: inline-block; 
+    width: 200px; 
+    text-align: left;
+}
+
+.registro-input{
+    display: inline-block; 
+    width: 400px;
+    text-align: left;
+}

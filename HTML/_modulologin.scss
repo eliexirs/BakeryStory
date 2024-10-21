@@ -1,0 +1,16 @@
+.container-login{
+    background-color: $pinkcolor;
+    color: $whitecolor;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.login-label{
+    display: inline-block; 
+    width: 100px; 
+    text-align: left;
+}
