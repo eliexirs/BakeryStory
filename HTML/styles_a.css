@@ -21,9 +21,8 @@ nav {
   text-decoration: none;
   color: #b37f59;
   margin: 5px; /*Margen entre los links*/
-  border-radius: 5px;
   background-color: #f5aed4;
-  border: 3px solid #b37f59;
+  border: 3px dashed #b37f59;
   padding: 10px;
 }
 
@@ -197,16 +196,16 @@ button:hover {
   padding: 30px;
 }
 
-.grid-container img{
+.grid-container img {
   width: 100px;
-  height: 100px; 
-  border: 5px solid #fab882b9;
+  height: 100px;
+  border: 5px solid rgba(250, 184, 130, 0.7254901961);
   background-color: #fcd8b9;
   transition: background-color 0.5s ease, transform 0.3s ease;
   box-shadow: 3px 3px 6px #333;
 }
 
-.grid-container img:hover{
+.grid-container img:hover {
   transform: scale(1.1);
 }
 
@@ -280,7 +279,7 @@ button:hover {
   align-items: center;
   background-color: rgba(225, 138, 190, 0.7215686275);
   padding: 30px;
-  border: 5px solid #e07db9;
+  border: 5px dashed #e07db9;
   text-align: center;
 }
 

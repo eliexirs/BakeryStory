@@ -51,7 +51,22 @@ h1{
     text-align: center; 
     color: #876146;
     font-family: 'Playwrite GB S', cursive;
-}
+    animation-duration: 3s;
+    animation-name: slidein;
+} 
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
 
 /*Para hacer parrafos color blanco*/
 .p{
@@ -88,7 +103,16 @@ h1{
     align-items: center;
     padding: 20px;
     margin: auto;
+    animation-name: example;
+    animation-duration: 4s;
 }
+
+
+@keyframes example {
+    from {background-color: #fab882b9;}
+    to {background-color: #e18abeb8;}
+  }
+
 
 .imagen-aside{
     flex: 0 0 auto; /*La imagen no crece ni se hace más pequeña*/
@@ -106,6 +130,10 @@ h1{
     align-items: center;
     padding: 20px;
     margin: auto;
+}
+
+.container-login a:hover{
+    color: #f5ea8e;
 }
 
 .login-label{
