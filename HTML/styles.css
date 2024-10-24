@@ -5,10 +5,10 @@
 nav{
     background-color: #f0bcf4; 
     display: flex; /*Diseño flexible*/
-    justify-content: space-between; /*Separación del logo de los links de navegación*/
     align-items: center; /*Alinea los items verticalmente al centro*/
     padding: 5px 20px; 
     border: 3px dashed #eddf8f;
+    margin: 10px;
 }
 
 a{
@@ -81,21 +81,15 @@ h2{
     background-position: center; 
     padding: 100px;
     margin-top: 20px;
-    margin-bottom: 20px;
     border-radius: 10px;
+    margin: 10px;
 }
 
-.container{
-    text-align:center;
-    width: 360px; 
-    margin: 40px;
+.size-img{
+    width: 360;; 
 }
 
-.flex-container{
-    display: flex; /*Diseño flexible*/
-    justify-content: center; /*Los items flexibles se alinean al centro*/
-    flex-wrap: wrap; /*Los items flexibles se reajustan si no hay espacio*/
-}
+
 
 .container-inicio{
     background-color: #e18abeb8;
@@ -125,16 +119,19 @@ h2{
 .imagen-aside:hover {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
 
 .container-login{
+    width: 400px;
     background-color: #e18abeb8;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
     margin: auto;
     animation-name: example;
     animation-duration: 4s;
+    border-radius: 10px;
+    border: 5px dashed #eddf8f;
 }
 
 @keyframes example {
@@ -159,6 +156,10 @@ h2{
     padding: 40px;
     animation-name: example;
     animation-duration: 4s;
+    width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px dashed #eddf8f;
 }
 
 @keyframes example {
