@@ -109,7 +109,7 @@ h1{
 
 
 @keyframes example {
-    from {background-color: #fab882b9;}
+    from {background-color: #fab882b9;} 
     to {background-color: #e18abeb8;}
   }
 
@@ -130,7 +130,15 @@ h1{
     align-items: center;
     padding: 20px;
     margin: auto;
+    animation-name: example;
+    animation-duration: 4s;
 }
+
+
+@keyframes example {
+    from {background-color: #fab882b9;} 
+    to {background-color: #e18abeb8;}
+  }
 
 .container-login a:hover{
     color: #f5ea8e;
@@ -147,7 +155,14 @@ h1{
     background-color: #e18abeb8; 
     color: #ffffff; 
     padding: 40px;
+    animation-name: example;
+    animation-duration: 4s;
 }
+
+@keyframes example {
+    from {background-color: #fab882b9;} 
+    to {background-color: #e18abeb8;}
+  }
 
 .registro-label{
     display: inline-block; 
@@ -223,7 +238,16 @@ button:hover{
     gap: 10px; 
     background-color: #e18abeb8;
     padding: 30px;
+    animation-name: example;
+    animation-duration: 4s;
 }
+
+
+@keyframes example {
+    from {background-color: #fab882b9;} 
+    to {background-color: #e18abeb8;}
+  }
+
 
 .grid-container img{
     width: 100px;
