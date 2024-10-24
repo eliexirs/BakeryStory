@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+
+        .flex_container {
+            /*Se trabaja siempre en una dimencion columnas o filas*/
+            display: flex;
+            /*Para pasar a columnas*/
+            flex-direction: column;
+            /*Para que salten a columnas  
+            flex-wrap: wrap;*/
+            
+        }
+
+        .flex_container div{
+
+            background-color: antiquewhite;
+            width: 100%;
+            margin: 5px;
+            text-align: center;
+            /* Altura de línea */
+            line-height: 80px;
+            font-size: 20px;
+            border: 2px solid black;
+
+
+        }
+        .item1 {
+            flex: 100px; 
+            padding: 10px;
+            border: 1px solid #000;
+            /* Asegura que el borde se incluya en el ancho total */
+            box-sizing: border-box; 
+        }
+        .item2 {
+            flex: 20px; 
+            padding: 10px;
+            border: 1px solid #000;
+            box-sizing: border-box; 
+        }
+        .item3 {
+            
+            padding: 10px;
+            border: 1px solid #000;
+            box-sizing: border-box; 
+        }
+        .item4 {
+            flex: 40px; 
+            padding: 10px;
+            border: 1px solid #000;
+            box-sizing: border-box; 
+        }
+        .item5 {
+            flex: 50px; 
+            padding: 10px;
+            border: 1px solid #000;
+            box-sizing: border-box; 
+        }
+
+
+
+
+
+    </style>
+
+    <title>CSS Grid Layoy</title>
+</head>
+<body>
+    <div class="flex_container">
+        <!--Cada Grid Container debe tener Grid Items-->
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        
+    
+       
+
+
+
+
+    </div>
+
+</body>
+</html>

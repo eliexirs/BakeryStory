@@ -3,11 +3,12 @@
 }
 
 nav{
-    background-color: #e993c0; 
+    background-color: #f0bcf4; 
     display: flex; /*Diseño flexible*/
     justify-content: space-between; /*Separación del logo de los links de navegación*/
     align-items: center; /*Alinea los items verticalmente al centro*/
     padding: 5px 20px; 
+    border: 3px dashed #eddf8f;
 }
 
 a{
@@ -28,18 +29,17 @@ a{
     text-decoration: none; 
     color: #b37f59;
     margin: 5px; /*Margen entre los links*/
-    
     background-color: #f5aed4;
-    border: 3px dashed #b37f59;
-    padding: 10px;
+    border: 3px dashed #eddf8f;
+    padding: 8px;
 }
 
 .links-nav a:hover{
-    color: #ffffff;
+    color: #eddf8f;
 }
 
 body{
-    background-image: url('cupcake.webp');
+    background-image: url('wallpaper.avif');
 }
 
 p{
@@ -66,7 +66,9 @@ h1{
     }
   }
 
-
+h2{
+    font-family: 'Playwrite GB S', cursive;
+}
 
 /*Para hacer parrafos color blanco*/
 .p{
@@ -107,12 +109,10 @@ h1{
     animation-duration: 4s;
 }
 
-
 @keyframes example {
     from {background-color: #fab882b9;} 
     to {background-color: #e18abeb8;}
   }
-
 
 .imagen-aside{
     flex: 0 0 auto; /*La imagen no crece ni se hace más pequeña*/
@@ -123,8 +123,6 @@ h1{
 }
 
 .imagen-aside:hover {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
-
-
 
 .container-login{
     background-color: #e18abeb8;
@@ -139,14 +137,13 @@ h1{
     animation-duration: 4s;
 }
 
-
 @keyframes example {
     from {background-color: #fab882b9;} 
     to {background-color: #e18abeb8;}
   }
 
 .container-login a:hover{
-    color: #f5ea8e;
+    color: #eddf8f;
 }
 
 .login-label{
@@ -195,7 +192,6 @@ button:hover{
     transform: scale(1.1); /*Aumenta el tamaño al pasar el cursor por*/
 }
 
-
 .container2{
     width: 30%;
     min-width: 250px;
@@ -207,7 +203,7 @@ button:hover{
 }
 
 .flex-container2{
-    background-color: #fab882b9; 
+    background-color: #fcdd81c4; 
     color: #876146;
     display: flex;
     justify-content: space-around;
@@ -247,12 +243,10 @@ button:hover{
     animation-duration: 4s;
 }
 
-
 @keyframes example {
     from {background-color: #fab882b9;} 
     to {background-color: #e18abeb8;}
   }
-
 
 .grid-container img{
     width: 100px;
@@ -270,9 +264,6 @@ button:hover{
     transform: rotateY(180deg);
     transform-style: preserve-3d;
 }
-
-
-
 
 .flex-container3{
     display: flex;
@@ -310,7 +301,6 @@ button:hover{
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    border: 5px solid #fab882b9;
     color: white;
     padding: 20px;
 }
@@ -327,7 +317,7 @@ button:hover{
 }
 
 .image-box {
-    background-color: #fab882b9;
+    background-color: #b8eafdb9;
     margin-bottom: 10px;
     padding: 10px;
     height: auto;
@@ -337,7 +327,7 @@ button:hover{
     justify-content: center;
     color: white;
     font-size: 14px;
-    border: 5px solid #fcd359c4;
+    border: 5px dotted #eddf8f;
 }
 
 .image-box img{
@@ -368,6 +358,7 @@ button:hover{
     padding: 10px;
     font-size: 15px;
     width: 100%; /* Ocupa todo el espacio disponible */
+    margin-right: 10px;
 }
 
 .form-section textarea {
@@ -383,9 +374,10 @@ button:hover{
     color: #ffffff;
     display: flex;
     justify-content: space-around;
-    background-color: #e091b3;
+    background-color: #f0bcf4;
     padding: 10px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .importante{
@@ -394,7 +386,7 @@ button:hover{
 }
 
 footer{
-    background-color: #e091b3; 
+    background-color: #f0bcf4; 
     text-align: center;
 }
 

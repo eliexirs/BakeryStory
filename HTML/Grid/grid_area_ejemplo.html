@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <style>
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 200px 250px 100px; 
+        gap: 5px;
+        grid-template-areas: 'header header  '
+        'menu menu '
+        'main  aside'
+        'footer footer ' 
+    }   
+
+    
+    .grid-container div{
+    
+        
+        text-align: center;
+        color: white;
+        border: 1px solid black;
+    }
+
+    /* para modificar los Grid Item*/
+
+    .item1{
+        grid-area: header;
+        background-color:yellow;
+       
+    }
+    .item2{
+        grid-area: menu;
+        background-color:blue;
+       
+    }
+    .item3{
+        grid-area: main;
+       
+       
+    }
+    .item4{
+        grid-area: aside;
+        background-color:green;
+       
+    }
+    .item5{
+        grid-area: footer;
+        background-color:grey;
+       
+    }
+
+    .grid-container1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+        grid-template-areas: "div1 div2"; /* Definimos las áreas del grid */
+        width: 100%; /* El contenedor ocupará el 100% del ancho disponible */
+        height: 100%;
+    
+    }
+
+    .box1 {
+    grid-area: div1; 
+    padding: 5px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    background-color: aqua;
+    }
+
+    .box2 {
+    grid-area: div2; 
+    padding: 5px;
+    border: 1px solid #a10606;
+    box-sizing: border-box;
+    background-color: blueviolet;
+    }
+
+
+    </style>
+    
+
+    <title>CSS Grid Layoy</title>
+</head>
+<body>
+    <div class="grid-container">
+        <!--Cada Grid Container debe tener Grid Items-->
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">
+            <div class="grid-container1">
+                <div class="box1">3</div>
+                <div class="box2">3</div>
+            </div>
+        </div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+
+
+    </div>
+
+</body>
+</html>

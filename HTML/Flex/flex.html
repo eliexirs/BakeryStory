@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Flexbox</title>
+    <style>
+
+        /* 
+        Conceptos básicos de flex:
+        -Flexbox es un sistema de diseño que permite distribuir elementos de manera flexible dentro de un contenedor. Es útil para alinear elementos en filas o columnas.
+
+        - Contenedor flexible (flex container): Es el elemento que tiene la propiedad display: flex;. Dentro de este contenedor, todos los elementos hijos se comportarán de manera flexible.
+        - Elementos flexibles (flex items): Son los hijos directos del contenedor flexible. Estos se alinean y distribuyen dentro del contenedor de acuerdo con las propiedades flex.
+
+        Propiedades principales:
+        - justify-content: Alinea los elementos en el eje horizontal (eje principal).
+        - align-items: Alinea los elementos en el eje vertical (eje cruzado).
+        - flex-direction: Define la dirección de los elementos flexibles (por ejemplo, en filas o columnas).
+        - flex-wrap: Permite que los elementos se envuelvan a una nueva línea si no caben en el contenedor.
+
+        */
+
+        .contenedor {
+            /* Activar flexbox */
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            height: 200px;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="item">Elemento 1</div>
+        <div class="item">Elemento 2</div>
+        <div class="item">Elemento 3</div>
+    </div>
+
+</body>
+</html>

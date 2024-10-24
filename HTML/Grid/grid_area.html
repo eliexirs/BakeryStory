@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Grid-area</title>
+    <style>
+
+        /*
+        Usos principales de grid-area:
+            - Con la propiedad grid-template-areas, puedes asignar nombres a las diferentes partes de la cuadrícula,
+             y luego con grid-area ubicar los elementos en esas áreas por nombre.
+
+        */
+
+
+
+        .contenedor {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "sidebar content content"
+                "footer footer footer";
+            grid-template-columns: 1fr 2fr 2fr; 
+            grid-template-rows: 100px 200px 100px; 
+            gap: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #FF9800;
+            color: white;
+            padding: 20px;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: #03A9F4;
+            color: white;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #9C27B0;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="header">Encabezado</div>
+        <div class="sidebar">Barra lateral</div>
+        <div class="content">Contenido principal</div>
+        <div class="footer">Pie de página</div>
+    </div>
+
+</body>
+</html>

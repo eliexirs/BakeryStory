@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Avanzado</title>
+    <style>
+
+/*
+CSS Grid es un sistema de diseño que permite crear layouts (plantillas) complejos en dos dimensiones, 
+a diferencia de Flexbox, que se enfoca en una sola dirección (horizontal o vertical). 
+Con Grid, puedes organizar elementos tanto en filas como en columnas de manera más estructurada y flexible.
+
+Conceptos clave en Grid:
+- Contenedor Grid: El elemento que define la cuadrícula con display: grid;. Dentro de este contenedor, puedes especificar cuántas filas y columnas tendrá el diseño.
+- Elementos Grid: Los elementos hijos directos del contenedor Grid, que se colocan dentro de las celdas de la cuadrícula.
+Propiedades básicas de CSS Grid:
+- grid-template-columns: Define cuántas columnas habrá y sus tamaños.
+- grid-template-rows: Define cuántas filas habrá y sus tamaños.
+- grid-gap o gap: Define el espacio entre las filas y columnas.
+*/
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: 300px 150px 200px 300px;
+            grid-template-rows: 150px 150px;
+            gap: 10px;
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            /*background-color: #f0f0f0;*/
+            
+
+        }
+
+        .contenedor div{
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 10px;
+            
+            }
+
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="item ">Elemento 1</div>
+        <div class="item">Elemento 2</div>
+        <div class="item ">Elemento 3</div>
+        <div class="item">Elemento 4</div>
+        <div class="item">Elemento 5</div>
+        <div class="item">Elemento 6</div>
+        
+    </div>
+
+</body>
+</html>
