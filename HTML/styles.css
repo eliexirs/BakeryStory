@@ -15,28 +15,7 @@ a{
     color: #876146;
 }
 
-#logo{
-    width: 40px;
-}
 
-/*Aplica estilo al contenedor de los links de navegación*/
-.links-nav{ 
-    margin-left: auto; /*Alinea todos los links de navegación a la derecha*/
-}
-
-/*Aplica estilos a los links de navegación*/
-.links-nav a{
-    text-decoration: none; 
-    color: #b37f59;
-    margin: 5px; /*Margen entre los links*/
-    background-color: #f5aed4;
-    border: 3px dashed #eddf8f;
-    padding: 8px;
-}
-
-.links-nav a:hover{
-    color: #eddf8f;
-}
 
 body{
     background-image: url('wallpaper.avif');
@@ -81,15 +60,19 @@ h4{
     color: #ffffff
 }
 
-#banner{
-    background-image: url(banner.png); 
-    background-size: cover; 
-    background-position: center; 
-    padding: 100px;
-    margin-top: 20px;
-    border-radius: 10px;
-    margin: 10px;
+.carousel {
+    height: 200px; /* Establece una altura fija para el carrusel */
+    margin: 20px;
 }
+
+.carousel-item {
+    height: 100%; /* Asegura que los elementos del carrusel ocupen toda la altura */
+}
+
+.carousel-item img {
+    height: 200px
+}
+
 
 .size-img{
     width: 360;
