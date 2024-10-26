@@ -95,6 +95,15 @@ h4{
     width: 360;
 }
 
+th{
+    font-family: 'Playwrite GB S', cursive;
+    color: #ffffff;
+}
+
+td{
+    color: #ffffff;
+}
+
 .morado{
     background-color: #daa7ffb6;
 }
