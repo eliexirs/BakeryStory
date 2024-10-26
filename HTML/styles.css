@@ -95,7 +95,9 @@ h4{
     width: 360;
 }
 
-
+.morado{
+    background-color: #daa7ffb6;
+}
 
 .container-inicio{
     background-color: #e18abeb8;
@@ -107,6 +109,7 @@ h4{
     margin: auto;
     animation-name: example;
     animation-duration: 4s;
+    margin: 20px;
 }
 
 @keyframes example {
