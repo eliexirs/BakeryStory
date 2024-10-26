@@ -2,14 +2,14 @@
     font-family: Arial, sans-serif; /*Fuente universal*/
 }
 
-nav{
+
+
+.navbar{
     background-color: #f0bcf4; 
-    display: flex; /*Diseño flexible*/
-    align-items: center; /*Alinea los items verticalmente al centro*/
-    padding: 5px 20px; 
     border: 3px dashed #eddf8f;
     margin: 10px;
 }
+
 
 a{
     color: #876146;
@@ -68,6 +68,12 @@ h1{
 
 h2{
     font-family: 'Playwrite GB S', cursive;
+    color: #876146;
+}
+
+h4{
+    font-family: 'Playwrite GB S', cursive;
+    color: #876146;
 }
 
 /*Para hacer parrafos color blanco*/
@@ -86,7 +92,7 @@ h2{
 }
 
 .size-img{
-    width: 360;; 
+    width: 360;
 }
 
 
