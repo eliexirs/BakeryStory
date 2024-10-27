@@ -25,18 +25,12 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarScroll">
-                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="inicio.html" style="color: #876146;">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="nosotros.html" style="color: #876146;">Nosotros</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="login.html" style="color: #876146;">Iniciar sesión</a>
-                                </li>
-                            </ul>
-                            <form class="d-flex position-absolute top-50 end-0 translate-middle-y">
+                            <div class="btn-group">
+                                <a href="inicio.html" class="btn btn-primary active" aria-current="page">Inicio</a>
+                                <a href="nosotros.html" class="btn btn-primary">Nosotros</a>
+                                <a href="login.html" class="btn btn-primary">Iniciar sesión</a>
+                              </div>
+                              <form class="d-flex ms-auto">
                                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                                 <button class="btn btn-outline-success" type="submit">Buscar</button>
                             </form>
@@ -47,7 +41,7 @@
 
 
 
-            <!-- BANNER -->
+            <!-- BANNER CARRUSEL -->
             <div class="container-xxl">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -57,13 +51,13 @@
                     </div>
                     <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="banner.png" class="d-block w-100" alt="...">
+                        <img src="banner_3.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="cupcake.webp" class="d-block w-100" alt="...">
+                        <img src="banner_4.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="wallpaper.avif" class="d-block w-100" alt="...">
+                        <img src="banner_5.png" class="d-block w-100" alt="...">
                     </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -123,7 +117,7 @@
             </div>
 
 
-            <div class="container">
+            <div class="container my-2">
                 <div class="row">
                     <div class="col-8 morado">
                         <table class="table table-borderless">
@@ -208,6 +202,13 @@
                     </div>
                 </div>
             </div>
+
+            <div class="container my-2 p-3 rosado">
+                <h2>Tus estrellas para el siguiente nivel</h2>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                  </div>
+            </div>
      
             <div class="flex-container2">
                 <section class="container2">
@@ -246,6 +247,8 @@
                     </div>
                 </section>
             </div>
+
+            
             
 
         </body>  

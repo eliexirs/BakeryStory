@@ -2,20 +2,15 @@
     font-family: Arial, sans-serif; /*Fuente universal*/
 }
 
-
-
 .navbar{
-    background-color: #f0bcf4; 
+    background-color: #dfbcf4; 
     border: 3px dashed #eddf8f;
     margin: 10px;
 }
 
-
 a{
     color: #876146;
 }
-
-
 
 body{
     background-image: url('wallpaper.avif');
@@ -50,9 +45,6 @@ h2, h3, h4, h5{
     color: #876146;
 }
 
-
-
-
 /*Para hacer parrafos color blanco*/
 .p{
     color: #ffffff
@@ -64,7 +56,7 @@ h2, h3, h4, h5{
 }
 
 .carousel-item {
-    height: 100%; /* Asegura que los elementos del carrusel ocupen toda la altura */
+    height: 100%; 
 }
 
 .carousel-item img {
@@ -88,6 +80,10 @@ td{
 
 .morado{
     background-color: #daa7ffb6;
+}
+
+.rosado{
+    background-color: #fbb4e2;
 }
 
 .container-inicio{
@@ -388,5 +384,6 @@ button:hover{
 footer{
     background-color: #f0bcf4; 
     text-align: center;
+    margin-top: 20px;
 }
 
