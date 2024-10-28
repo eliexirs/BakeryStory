@@ -8,7 +8,7 @@
     margin: 10px;
 }
 
-a{
+.a{
     color: #876146;
 }
 
@@ -45,28 +45,66 @@ h2, h3, h4, h5{
     color: #876146;
 }
 
+.borde{
+    border: 5px dashed #eddf8f;
+}
+
 /*Para hacer parrafos color blanco*/
 .p{
     color: #ffffff
 }
 
-.carousel {
-    height: 200px; /* Establece una altura fija para el carrusel */
+.naranjo{
+    background-color: #fab882b9;
+}
+
+.btn-custom .btn{
+    background-color: #ffdca1;
+    color: #876146;
+}
+
+.rosado{
+    background-color: #f93cb7;
+}
+
+.morado{
+    background-color: #dfbcf4;
+}
+
+.carousel1{
+    height: 200px; 
     margin: 20px;
 }
 
-.carousel-item {
+.carousel1-item{
     height: 100%; 
 }
 
-.carousel-item img {
+.carousel1-item img{
     height: 200px
 }
 
+.carousel2 {
+    height: 270px;
+}
+
+.carousel2-item{
+    height: 100%;
+}
+
+.carousel2-item img{
+    height: 270px;
+}
 
 .size-img{
     width: 360px;
     height: 205px;
+}
+
+.size-img2{
+    width: 250px;
+    height: 400px;
+
 }
 
 th{
@@ -78,25 +116,23 @@ td{
     color: #ffffff;
 }
 
-.morado{
-    background-color: #daa7ffb6;
+
+.animacion img{
+    transition: background-color 0.5s ease, transform 0.3s ease;
 }
 
-.rosado{
-    background-color: #fbb4e2;
+.animacion img:hover{
+    transform: scale(1.1);
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
 }
 
 .container-inicio{
     background-color: #e18abeb8;
-    color: #ffffff;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
-    margin: auto;
     animation-name: example;
     animation-duration: 4s;
-    margin: 20px;
 }
 
 @keyframes example {
@@ -288,9 +324,10 @@ button:hover{
     transform: scale(1.05);
 }
 
-.flex-container3 img{
+.images img{
     width: 200px;
     height: 200px;
+    text-align: center;
 }
 
 .grid-container2{
@@ -341,39 +378,6 @@ button:hover{
     color: white;
     padding: 20px;
 
-}
-
-.form-section form{
-    display: flex; 
-    flex-direction: column; /*Para ponerlo en una columna*/
-    gap: 10px;
-}
-
-.form-section input,
-.form-section textarea {
-    padding: 10px;
-    font-size: 15px;
-    width: 100%; /* Ocupa todo el espacio disponible */
-    margin-right: 10px;
-}
-
-.form-section textarea {
-    resize: vertical; /*Redimensiona solo verticalmente el Mensaje del formulario*/
-    height: 150px; 
-}
-
-#map img{
-    width: 100%;
-}
-
-.pre-footer {
-    color: #ffffff;
-    display: flex;
-    justify-content: space-around;
-    background-color: #f0bcf4;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .importante{
