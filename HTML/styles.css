@@ -12,6 +12,14 @@
     color: #876146;
 }
 
+a{
+    color: #876146 !important;
+}
+
+a:hover{
+    color: #ff74cc !important;
+}
+
 body{
     background-image: url('wallpaper.avif');
 }
@@ -64,12 +72,21 @@ h2, h3, h4, h5{
     border: 2px dashed #eddf8f;
 }
 
+.btn-custom .btn:hover{
+    color: #ff74cc;
+}
+
 .rosado{
-    background-color: #f93cb7;
+    background-color: #ffb9ff;
 }
 
 .morado{
     background-color: #dfbcf4;
+}
+
+.celeste{
+    background-color: #b1eaffbe;
+    border: 3px dashed #82ddfe;
 }
 
 .carousel1{
@@ -151,20 +168,10 @@ td{
 
 .imagen-aside:hover {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
 
-.container-login{
-    width: 400px;
-    background-color: #e18abeb8;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding: 40px;
-    margin: auto;
-    animation-name: example;
-    animation-duration: 4s;
+.login{
+    background-color: #ffd6f0 !important;
     border-radius: 10px;
-    border: 5px dashed #eddf8f;
+    border: 3px dashed #eddf8f !important;
 }
 
 @keyframes example {
@@ -211,19 +218,7 @@ td{
     text-align: left;
 }
 
-button{
-    background-color: #ec8fcc; 
-    color: #ffffff;
-    border-color: #ffffff;
-    border-radius: 8px;
-    padding: 10px;
-    transition: background-color 0.5s ease, transform 0.3s ease; /*Transición*/
-}
 
-button:hover{
-    background-color: #d07b43; /*Nuevo color al pasar el cursor por encima*/
-    transform: scale(1.1); /*Aumenta el tamaño al pasar el cursor por*/
-}
 
 .container2{
     width: 30%;
@@ -350,23 +345,7 @@ button:hover{
     text-align: center;
 }
 
-.image-box {
-    background-color: #b8eafdb9;
-    margin-bottom: 10px;
-    padding: 10px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 14px;
-    border: 5px dotted #eddf8f;
-}
 
-.image-box img{
-    width: 300px;
-}
 
 
 .grid-container3{
