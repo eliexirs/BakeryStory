@@ -57,6 +57,15 @@ h2, h3, h4, h5{
     border: 5px dashed #eddf8f;
 }
 
+.modal-content .modal-header,
+.modal-content .modal-footer{
+    border: 1px dashed #eddf8f !important;
+}
+
+.modal-content input{
+    border: 1px dashed #eddf8f !important;
+}
+
 /*Para hacer parrafos color blanco*/
 .p{
     color: #ffffff
@@ -94,7 +103,7 @@ h2, h3, h4, h5{
 }
 
 input::placeholder{
-    color: #b49077 !important;
+    color: #876146 !important;
 }
 
 .carousel1{
