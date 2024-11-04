@@ -80,6 +80,10 @@ h2, h3, h4, h5{
     background-color: #ffb9ff;
 }
 
+.rosado2{
+    background-color: #fbb1d6 !important;
+}
+
 .morado{
     background-color: #dfbcf4;
 }
@@ -87,6 +91,10 @@ h2, h3, h4, h5{
 .celeste{
     background-color: #b1eaffbe;
     border: 3px dashed #82ddfe;
+}
+
+input::placeholder{
+    color: #b49077 !important;
 }
 
 .carousel1{
