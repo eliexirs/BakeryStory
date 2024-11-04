@@ -59,8 +59,9 @@ h2, h3, h4, h5{
 }
 
 .btn-custom .btn{
-    background-color: #ffdca1;
+    background-color: #fbb1d6;
     color: #876146;
+    border: 2px dashed #eddf8f;
 }
 
 .rosado{
