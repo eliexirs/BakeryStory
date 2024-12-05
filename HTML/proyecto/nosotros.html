@@ -4,7 +4,7 @@
             <meta charset="UTF-8">
             <title>Bakery Story</title>
             <!-- SE IMPORTA EL ARCHIVO DE CSS -->
-            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="styles.css?v=1.0">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
@@ -46,35 +46,38 @@
             
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                <div class="modal-content login">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><img src="..\proyecto\logo.png" alt="" width="40" height="40" class="d-inline-block align-text-center">Inicio de sesión</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-content login">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><img src="..\proyecto\logo.png" alt="" width="40" height="40" class="d-inline-block align-text-center">Inicio de sesión</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form class="row g-3"  action="..\PHP\login.php" method="POST">
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="input_email" class="a">Email</label>
+                                    <input type="email" class="form-control rosado2" name="email" id="input_email" placeholder="nombre@ejemplo.com">
+                                </div>
+                                <div>
+                                    <label for="input_pass" class="a">Contraseña</label>
+                                    <input type="password" class="form-control rosado2" name="contraseña" id="input_pass">
+                                </div>
+                                <div class="form-check my-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label a" for="flexCheckDefault">
+                                    Recordarme
+                                    </label>
+                                </div>
+                                <div>
+                                    <p>¿No tienes una cuenta?<a href="registro.html" class="a">¡Regístrate!</a></p>
+                                </div>
+                            </div>
+                            <div class="modal-footer btn-custom">
+                                <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="submit" class="btn">Iniciar sesión</button>
+                            </div>
+                        </form>
+                        
                     </div>
-                    <div class="modal-body">
-                        <div class="mb-3">
-                            <label for="input_email" class="a">Email</label>
-                            <input type="email" class="form-control rosado2" id="input_email" placeholder="nombre@ejemplo.com">
-                        </div>
-                        <div>
-                            <label for="input_pass" class="a">Contraseña</label>
-                            <input type="password" class="form-control rosado2" id="input_pass">
-                        </div>
-                        <div class="form-check my-3">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label a" for="flexCheckDefault">
-                              Recordarme
-                            </label>
-                        </div>
-                        <div>
-                            <p>¿No tienes una cuenta?<a href="registro.html" class="a">¡Regístrate!</a></p>
-                        </div>
-                    </div>
-                    <div class="modal-footer btn-custom">
-                        <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn">Iniciar sesión</button>
-                    </div>
-                </div>
                 </div>
             </div>
 
