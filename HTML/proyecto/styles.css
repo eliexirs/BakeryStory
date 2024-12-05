@@ -92,6 +92,7 @@ h2, h3, h4, h5{
     color: #ff74cc ;
 }
 
+
 .rosado{
     background-color: #ffb9ff;
 }
@@ -213,6 +214,7 @@ td{
     text-align: left;
 }
 
+
 .container-registro{
     background-color: #e18abeb8; 
     color: #ffffff;
@@ -222,7 +224,7 @@ td{
     width: 800px;
     margin: auto;
     border-radius: 10px;
-    border: 5px dashed #eddf8f;
+    border: 5px dashed #eddf8f !important;
 }
 
 @keyframes example {

@@ -47,10 +47,6 @@ mysqli_close($conexion);
                 </nav>
             </header>
 
-            
-            
-            
-            
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content login">
@@ -89,41 +85,46 @@ mysqli_close($conexion);
             </div>
 
         <main class="container">
-            <form action="" method="GET" class="d-flex align-items-center btn-custom mb-4 my-5">
-                <a href="..\proyecto\registro.html" class="btn btn-lg text-nowrap">Registrar usuario</a>
-            </form>
-            <table class="table align-middle table-hover text-center">
-                <thead class="table-active">
-                    <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Nombres</th>
-                        <th scope="col">Apellidos</th>
-                        <th scope="col">Usuario</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Fecha de Nacimiento</th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody class="">
-                    <?php
-                        while ($row=mysqli_fetch_array ($query)) {
-                    ?>
-                    <tr>
-                        <td><?php echo $row['id_usuario']?></td>
-                        <td><?php echo $row['nombres']?></td>
-                        <td><?php echo $row['apellidos']?></td>
-                        <td><?php echo $row['usuario']?></td>
-                        <td><?php echo $row['email']?></td>
-                        <td><?php echo $row['fecha_nac']?></td>
-                        <td><a href="actualizar.php?id_usuario=<?php echo $row['id_usuario']?>" class="btn btn-info">Editar</a></td>
-                        <td><a class="btn btn-danger" href="delete.php?id_usuario=<?php echo $row['id_usuario']?>" onclick="return confirm('¿Realmente desea eliminar?')">Eliminar</a></td>
-                    </tr>
-                    <?php
-                        }
-                    ?>
-                </tbody>
-            </table>
+            <h1>Panel de Control de Usuario</h1>
+            <div class="container container-registro">
+                <div>
+                    <table class="table align-middle table-hover text-center">
+                        <thead class="table-active">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Nombres</th>
+                                <th scope="col">Apellidos</th>
+                                <th scope="col">Usuario</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Fecha de Nacimiento</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                                while ($row=mysqli_fetch_array ($query)) {
+                            ?>
+                            <tr>
+                                <td><?php echo $row['id_usuario']?></td>
+                                <td><?php echo $row['nombres']?></td>
+                                <td><?php echo $row['apellidos']?></td>
+                                <td><?php echo $row['usuario']?></td>
+                                <td><?php echo $row['email']?></td>
+                                <td><?php echo $row['fecha_nac']?></td>
+                                <td class="btn-custom"><a class="btn" href="actualizar.php?id_usuario=<?php echo $row['id_usuario']?>">Editar</a></td>
+                                <td class="btn-custom"><a class="btn" href="delete.php?id_usuario=<?php echo $row['id_usuario']?>" onclick="return confirm('¿Realmente desea eliminar?')">Eliminar</a></td>
+                            </tr>
+                            <?php
+                                }
+                            ?>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex justify-content-center align-items-center btn-custom mb-4 my-5">
+                    <a href="..\proyecto\registro.html" class="btn btn-lg text-nowrap">Registrar usuario</a>
+                </div>
+            </div>
         </main>
 
         <div class="container-fluid naranjo my-4">
