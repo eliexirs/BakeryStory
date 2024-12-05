@@ -12,11 +12,14 @@ if (mysqli_num_rows($resultado) > 0) {
     $row = mysqli_fetch_assoc($resultado);
     if ($row['contraseña'] === $contraseña) {
         $alerta = "Se inició sesión" ;
+        $redireccionar = true;
     } else {
         $alerta = "El email y la contraseña no coinciden";
+        $redireccionar = false;
     }
 } else {
     $alerta = "El email y la contraseña no coinciden";
+    $redireccionar = false;
 }
 
 mysqli_close($conexion);
@@ -48,64 +51,18 @@ mysqli_close($conexion);
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarScroll">
-                            <div class="btn-group btn-custom">
-                                <a href="..\proyecto\inicio.html" class="btn active" aria-current="page">Inicio</a>
-                                <a href="..\proyecto\nosotros.html" class="btn">Nosotros</a>
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Iniciar sesión
-                                </button>
-                            </div>
-                            <form class="d-flex ms-auto">
-                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Buscar</button>
-                            </form>
-                        </div>
                     </div>
                 </nav>
             </header>
 
-            
-            
-            
-            
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                <div class="modal-content login">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><img src="..\proyecto\logo.png" alt="" width="40" height="40" class="d-inline-block align-text-center">Inicio de sesión</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="mb-3">
-                            <label for="input_email" class="a">Email</label>
-                            <input type="email" class="form-control rosado2" id="input_email" placeholder="nombre@ejemplo.com" required>
-                        </div>
-                        <div>
-                            <label for="input_pass" class="a">Contraseña</label>
-                            <input type="password" class="form-control rosado2" id="input_pass" required>
-                        </div>
-                        <div class="form-check my-3">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label a" for="flexCheckDefault">
-                              Recordarme
-                            </label>
-                        </div>
-                        <div>
-                            <p>¿No tienes una cuenta?<a href="..\proyecto\registro.html" class="a">¡Regístrate!</a></p>
-                        </div>
-                    </div>
-                    <div class="modal-footer btn-custom">
-                        <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn">Iniciar sesión</button>
-                    </div>
-                </div>
-                </div>
-            </div>
 
             <div class="alert alert-info alert-dismissible fade show py-5 mt-5 mb-5 text-center" role="alert">
                 <h3 class="my-auto"><?php echo $alerta; ?></h3>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="location.href='../proyecto/inicio.html'"></button>
+                <?php if (isset($redireccionar) && $redireccionar): ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="location.href='../proyecto/inicio_iniciado.html'"></button>
+                <?php else: ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="location.href='../proyecto/inicio.html'"></button>
+                <?php endif; ?>
             </div>
 
         <div class="container-fluid naranjo my-4">

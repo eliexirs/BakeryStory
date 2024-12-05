@@ -37,16 +37,11 @@ mysqli_close($conexion);
                         </button>
                         <div class="collapse navbar-collapse" id="navbarScroll">
                             <div class="btn-group btn-custom">
-                                <a href="..\proyecto\inicio.html" class="btn active" aria-current="page">Inicio</a>
-                                <a href="..\proyecto\nosotros.html" class="btn">Nosotros</a>
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Iniciar sesión
-                                </button>
+                                <a href="..\proyecto\inicio_iniciado.html" class="btn active" aria-current="page">Inicio</a>
+                                <a href="..\proyecto\nosotros_iniciado.html" class="btn">Nosotros</a>
+                                <a href="..\PHP\usuario.php" class="btn">Panel de Control</a>
+                                <a class="btn" href="..\proyecto\inicio.html" onclick="return confirm('¿Seguro/a que quieres cerrar sesión?')">Cerrar sesión</a>
                             </div>
-                            <form class="d-flex ms-auto">
-                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Buscar</button>
-                            </form>
                         </div>
                     </div>
                 </nav>
@@ -94,8 +89,8 @@ mysqli_close($conexion);
             </div>
 
         <main class="container">
-            <form action="" method="GET" class="d-flex align-items-center mb-4 my-5">
-                <a href="..\proyecto\registro.html" class="btn btn-outline-dark btn-lg text-nowrap">Registrar usuario</a>
+            <form action="" method="GET" class="d-flex align-items-center btn-custom mb-4 my-5">
+                <a href="..\proyecto\registro.html" class="btn btn-lg text-nowrap">Registrar usuario</a>
             </form>
             <table class="table align-middle table-hover text-center">
                 <thead class="table-active">
