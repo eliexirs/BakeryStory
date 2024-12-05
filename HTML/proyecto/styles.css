@@ -57,9 +57,12 @@ h2, h3, h4, h5{
     border: 5px dashed #eddf8f;
 }
 
-.modal-content .modal-header,
-.modal-content .modal-footer{
+.modal-content .modal-header{
     border: 1px dashed #eddf8f !important;
+}
+
+.modal-content .modal-footer {
+    border: none;
 }
 
 .modal-content input{

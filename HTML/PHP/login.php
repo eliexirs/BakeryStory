@@ -1,10 +1,23 @@
 <?php
+
 include("conexion.php");
 
+$email= $_POST['email'];
+$contraseña = $_POST['contraseña'];
 
-$sql = "SELECT * FROM usuarios";
+$sql = "SELECT * FROM usuarios WHERE email = '$email'";
+$resultado = mysqli_query($conexion, $sql);
 
-$query=mysqli_query($conexion, $sql);
+if (mysqli_num_rows($resultado) > 0) {
+    $row = mysqli_fetch_assoc($resultado);
+    if ($row['contraseña'] === $contraseña) {
+        $alerta = "Se inició sesión" ;
+    } else {
+        $alerta = "El email y la contraseña no coinciden";
+    }
+} else {
+    $alerta = "El email y la contraseña no coinciden";
+}
 
 mysqli_close($conexion);
 
@@ -90,43 +103,10 @@ mysqli_close($conexion);
                 </div>
             </div>
 
-        <main class="container">
-            <form action="" method="GET" class="d-flex align-items-center mb-4 my-5">
-                <a href="..\proyecto\registro.html" class="btn btn-outline-dark btn-lg text-nowrap">Registrar usuario</a>
-            </form>
-            <table class="table align-middle table-hover text-center">
-                <thead class="table-active">
-                    <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Nombres</th>
-                        <th scope="col">Apellidos</th>
-                        <th scope="col">Usuario</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Fecha de Nacimiento</th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody class="">
-                    <?php
-                        while ($row=mysqli_fetch_array ($query)) {
-                    ?>
-                    <tr>
-                        <td><?php echo $row['id_usuario']?></td>
-                        <td><?php echo $row['nombres']?></td>
-                        <td><?php echo $row['apellidos']?></td>
-                        <td><?php echo $row['usuario']?></td>
-                        <td><?php echo $row['email']?></td>
-                        <td><?php echo $row['fecha_nac']?></td>
-                        <td><a href="actualizar.php?id_usuario=<?php echo $row['id_usuario']?>" class="btn btn-info">Editar</a></td>
-                        <td><a class="btn btn-danger" href="delete.php?id_usuario=<?php echo $row['id_usuario']?>" onclick="return confirm('¿Realmente desea eliminar?')">Eliminar</a></td>
-                    </tr>
-                    <?php
-                        }
-                    ?>
-                </tbody>
-            </table>
-        </main>
+            <div class="alert alert-info alert-dismissible fade show py-5 mt-5 mb-5 text-center" role="alert">
+                <h3 class="my-auto"><?php echo $alerta; ?></h3>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="location.href='../proyecto/inicio.html'"></button>
+            </div>
 
         <div class="container-fluid naranjo my-4">
                 <div class="row">
