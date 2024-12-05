@@ -2,7 +2,12 @@
 include("conexion.php");
 
 
-$sql = "SELECT * FROM usuarios";
+if (isset($_GET['buscador'])) {
+    $filtro=$_GET['filtro'];
+    $sql="SELECT * FROM usuarios WHERE id_usuario LIKE '%$filtro%' OR nombres LIKE'%$filtro%' OR apellidos LIKE'%$filtro%' OR usuario LIKE'%$filtro%' OR email LIKE'%$filtro%' OR fecha_nac LIKE'%$filtro%'";
+}else{
+    $sql = "SELECT * FROM usuarios";
+}
 
 $query=mysqli_query($conexion, $sql);
 
@@ -87,6 +92,10 @@ mysqli_close($conexion);
         <main class="container">
             <h1>Panel de Control de Usuario</h1>
             <div class="container container-registro">
+                <form action="" method="GET" class="d-flex align-items-center btn-custom mb-4 my-5">
+                    <input type="search" name="filtro" placeholder="Buscar por filtro" class="form-control me-3 py-2" aria-label="Search" >
+                    <input type="submit" name="buscador" class="btn btn-lg me-3">
+                </form>
                 <div>
                     <table class="table align-middle table-hover text-center">
                         <thead class="table-active">
