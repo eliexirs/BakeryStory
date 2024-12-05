@@ -101,7 +101,7 @@ $row=mysqli_fetch_array($query);
                     <div class="col-md-6">
                         <div class="input-group mb-3">
                             <label class="input-group-text" for="date_input">Fecha de nacimiento</label>
-                            <input type="date" class="form-control" id="date_input" name="fecha" value="<?php echo $row['fecha_nac'] ?>">
+                            <input type="date" class="form-control" id="date_input" name="fecha_nac" value="<?php echo $row['fecha_nac'] ?>">
                         </div>
             </form>
             <input type="submit" class="btn btn-lg col-4 mt-4 mb-2 mx-auto" value="Actualizar" onclick="return confirm('¿Seguro/a que desea modificar?')"></input>
