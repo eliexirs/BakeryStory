@@ -67,11 +67,11 @@ mysqli_close($conexion);
                             <div class="modal-body">
                                 <div class="mb-3">
                                     <label for="input_email" class="a">Email</label>
-                                    <input type="email" class="form-control rosado2" name="email" id="input_email" placeholder="nombre@ejemplo.com">
+                                    <input type="email" class="form-control rosado2" name="email" id="input_email" placeholder="nombre@ejemplo.com" required>
                                 </div>
                                 <div>
                                     <label for="input_pass" class="a">Contraseña</label>
-                                    <input type="password" class="form-control rosado2" name="contraseña" id="input_pass">
+                                    <input type="password" class="form-control rosado2" name="contraseña" id="input_pass" required>
                                 </div>
                                 <div class="form-check my-3">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">

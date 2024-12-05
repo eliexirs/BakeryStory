@@ -77,7 +77,7 @@ $row=mysqli_fetch_array($query);
                     <input type="password" class="form-control" placeholder="Contraseña" name="contraseña" value="<?php echo $row['contraseña'] ?>">
                 </div>
                 <div class="col-12">
-                    <input type="text" class="form-control" placeholder="Email" name="email" value="<?php echo $row['email'] ?>">
+                    <input type="email" class="form-control" placeholder="Email" name="email" value="<?php echo $row['email'] ?>">
                 </div>
                 
                 <div class="col-md-4">
@@ -103,8 +103,8 @@ $row=mysqli_fetch_array($query);
                         <label class="input-group-text" for="date_input">Fecha de nacimiento</label>
                         <input type="date" class="form-control" id="date_input" name="fecha_nac" value="<?php echo $row['fecha_nac'] ?>">
                 </div>
-                <div class="col-12 d-flex justify-content-center btn-custom">
-                    <input type="submit" class="btn" value="Modificar" onclick="return confirm('¿Seguro/a que desea modificar?')">
+                <div class="btn-custom">
+                    <input type="submit" class="btn form-control" value="Modificar" onclick="return confirm('¿Seguro/a que desea modificar?')">
                 </div>
             </form>
             
