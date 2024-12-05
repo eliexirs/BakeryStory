@@ -38,8 +38,8 @@ $row=mysqli_fetch_array($query);
                     </button>
                     <div class="collapse navbar-collapse" id="navbarScroll">
                         <div class="btn-group btn-custom">
-                            <a href="inicio.html" class="btn active" aria-current="page">Inicio</a>
-                            <a href="nosotros.html" class="btn">Nosotros</a>
+                            <a href="..\proyecto\inicio.html" class="btn active" aria-current="page">Inicio</a>
+                            <a href="..\proyecto\nosotros.html" class="btn">Nosotros</a>
                             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Iniciar sesión
                             </button>
@@ -57,54 +57,57 @@ $row=mysqli_fetch_array($query);
 
 
         <!--MAIN-->
-        <main class="container" >
-        <form class="row g-3" action="update.php" method="POST">
-            <h2>Modificar</h2>
-            <input type="hidden" name="id_usuario" value="<?php echo $row['id_usuario'] ?>">
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Nombres" name="nombres" value="<?php echo $row['nombres'] ?>">
+        <h1>Modificar usuario</h1>
+        <main class="container-registro" >
+            <form class="row g-3" action="update.php" method="POST">
+                <input type="hidden" name="id_usuario" value="<?php echo $row['id_usuario'] ?>">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Nombres" name="nombres" value="<?php echo $row['nombres'] ?>">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Apellidos" name="apellidos" value="<?php echo $row['apellidos'] ?>">
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <div class="input-group-text">@</div>
+                        <input type="text" class="form-control" placeholder="Usuario" name="usuario" value="<?php echo $row['usuario'] ?>">
                     </div>
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Apellidos" name="apellidos" value="<?php echo $row['apellidos'] ?>">
+                </div>
+                <div class="col-md-6">
+                    <input type="password" class="form-control" placeholder="Contraseña" name="contraseña" value="<?php echo $row['contraseña'] ?>">
+                </div>
+                <div class="col-12">
+                    <input type="text" class="form-control" placeholder="Email" name="email" value="<?php echo $row['email'] ?>">
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="color_input">Color de tu pastelería</label>
+                        <input type="color" class="form-control form-control-color" id="color_input" value="#ec8fcc">
                     </div>
-                    <div class="col-md-6">
-                        <div class="input-group">
-                            <div class="input-group-text">@</div>
-                            <input type="text" class="form-control" placeholder="Usuario" name="usuario" value="<?php echo $row['usuario'] ?>">
+                </div>
+                <div class="col-md-2">
+                    <div class="mb-3">
+                        <select class="form-select" id="inputGroupSelect01" name="idioma">
+                            <option selected>Idioma</option>
+                            <option>Español</option>
+                            <option>Inglés</option>
+                            <option>Portugués</option>
+                            <option>Italiano</option>
+                        </select>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <input type="password" class="form-control" placeholder="Contraseña" name="contraseña" value="<?php echo $row['contraseña'] ?>">
-                    </div>
-                    <div class="col-12">
-                        <input type="text" class="form-control" placeholder="Email" name="email" value="<?php echo $row['email'] ?>">
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <div class="input-group mb-3">
-                            <label class="input-group-text" for="color_input">Color de tu pastelería</label>
-                            <input type="color" class="form-control form-control-color" id="color_input" value="#ec8fcc">
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="mb-3">
-                            <select class="form-select" id="inputGroupSelect01" name="idioma">
-                                <option selected>Idioma</option>
-                                <option>Español</option>
-                                <option>Inglés</option>
-                                <option>Portugués</option>
-                                <option>Italiano</option>
-                            </select>
-                          </div>
-                    </div>
+                </div>
 
-                    <div class="col-md-6">
-                        <div class="input-group mb-3">
-                            <label class="input-group-text" for="date_input">Fecha de nacimiento</label>
-                            <input type="date" class="form-control" id="date_input" name="fecha_nac" value="<?php echo $row['fecha_nac'] ?>">
-                        </div>
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="date_input">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="date_input" name="fecha_nac" value="<?php echo $row['fecha_nac'] ?>">
+                </div>
+                <div class="col-12 d-flex justify-content-center btn-custom">
+                    <input type="submit" class="btn" value="Modificar" onclick="return confirm('¿Seguro/a que desea modificar?')">
+                </div>
             </form>
-            <input type="submit" class="btn btn-lg col-4 mt-4 mb-2 mx-auto" value="Actualizar" onclick="return confirm('¿Seguro/a que desea modificar?')"></input>
+            
         </main>
 
 

@@ -65,6 +65,7 @@ h2, h3, h4, h5{
     border: none;
 }
 
+
 .modal-content input{
     border: 1px dashed #eddf8f !important;
 }
@@ -82,6 +83,9 @@ h2, h3, h4, h5{
     background-color: #fbb1d6;
     color: #876146;
     border: 2px dashed #eddf8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-custom .btn:hover{
