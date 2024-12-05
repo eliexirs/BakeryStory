@@ -3,7 +3,8 @@ include("conexion.php");
 
 $id_usuario = $_GET['id_usuario'];
 
-$sql="SELECT * FROM usuario WHERE id_usuario='$id_usuario'";
+$sql="SELECT * FROM usuarios WHERE id_usuario='$id_usuario'";
+
 $query=mysqli_query($conexion,$sql);
 
 $row=mysqli_fetch_array($query);
@@ -21,7 +22,7 @@ $row=mysqli_fetch_array($query);
         <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <title>Panel de control</title>
+        <title>Actualizar</title>
     </head>
 <body>
     <div class = "container-fluid">
@@ -55,7 +56,56 @@ $row=mysqli_fetch_array($query);
 
 
 
-<!--MAIN-->
+        <!--MAIN-->
+        <main class="container" >
+        <form class="row g-3" action="update.php" method="POST">
+            <h2>Modificar</h2>
+            <input type="hidden" name="id_usuario" value="<?php echo $row['id_usuario'] ?>">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Nombres" name="nombres" value="<?php echo $row['nombres'] ?>">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Apellidos" name="apellidos" value="<?php echo $row['apellidos'] ?>">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="text" class="form-control" placeholder="Usuario" name="usuario" value="<?php echo $row['usuario'] ?>">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" placeholder="Contraseña" name="contraseña" value="<?php echo $row['contraseña'] ?>">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Email" name="email" value="<?php echo $row['email'] ?>">
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="color_input">Color de tu pastelería</label>
+                            <input type="color" class="form-control form-control-color" id="color_input" value="#ec8fcc">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="mb-3">
+                            <select class="form-select" id="inputGroupSelect01" name="idioma">
+                                <option selected>Idioma</option>
+                                <option>Español</option>
+                                <option>Inglés</option>
+                                <option>Portugués</option>
+                                <option>Italiano</option>
+                            </select>
+                          </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="date_input">Fecha de nacimiento</label>
+                            <input type="date" class="form-control" id="date_input" name="fecha" value="<?php echo $row['fecha_nac'] ?>">
+                        </div>
+            </form>
+            <input type="submit" class="btn btn-lg col-4 mt-4 mb-2 mx-auto" value="Actualizar" onclick="return confirm('¿Seguro/a que desea modificar?')"></input>
+        </main>
 
 
 

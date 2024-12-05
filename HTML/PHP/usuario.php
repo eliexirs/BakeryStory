@@ -2,7 +2,7 @@
 include("conexion.php");
 
 
-$sql = "SELECT * FROM usuario";
+$sql = "SELECT * FROM usuarios";
 
 $query=mysqli_query($conexion, $sql);
 
@@ -113,8 +113,8 @@ mysqli_close($conexion);
                     ?>
                     <tr>
                         <td><?php echo $row['id_usuario']?></td>
-                        <td><?php echo $row['nombre']?></td>
-                        <td><?php echo $row['apellido']?></td>
+                        <td><?php echo $row['nombres']?></td>
+                        <td><?php echo $row['apellidos']?></td>
                         <td><?php echo $row['usuario']?></td>
                         <td><?php echo $row['email']?></td>
                         <td><?php echo $row['fecha_nac']?></td>

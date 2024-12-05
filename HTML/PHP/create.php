@@ -10,19 +10,20 @@ $email = $_POST['email'];
 $fecha_nac = $_POST['fecha_nac'];
 
 
-$comprobarEmail_sql = "SELECT * FROM usuario WHERE correo = '$correo'";
+$comprobarEmail_sql = "SELECT * FROM usuarios WHERE email = '$email'";
 $resultado=mysqli_query($conexion,$comprobarEmail_sql);
 
 #Comprueba que el correo electrónico no se encuentre en uso
 if (mysqli_num_rows($resultado) > 0){
     $alerta = " La dirección de correo electrónico ya ha sido registrada <br><br>";
 }else{
-    $sql="INSERT INTO usuario (nombres, apellidos, usuario, contraseña, email, fecha_nac) VALUES ('$nombres','$apellidos','$usuario','$contraseña','$email', '$fecha_nac')";
+    $sql="INSERT INTO usuarios (nombres, apellidos, usuario, contraseña, email, fecha_nac) VALUES ('$nombres','$apellidos','$usuario','$contraseña','$email', '$fecha_nac')";
+    
     $query=mysqli_query($conexion,$sql);
     if($query){
         $alerta = "Registro exitoso </b><br>";
     } else{
-        $alerta = "Error de conexión <br><br>";
+        $alerta = "Error al insertar: " . mysqli_error($conexion) . "<br><br>";
     }    
     
 }
@@ -68,7 +69,7 @@ if (mysqli_num_rows($resultado) > 0){
                         </div>
                     </div>
                 </nav>
-            </header>
+        </header>
 
             
             
@@ -111,8 +112,8 @@ if (mysqli_num_rows($resultado) > 0){
         <div class="alert alert-info alert-dismissible fade show py-5 mt-5 mb-5 text-center" role="alert">
             <h3><?php echo $alerta; ?></h3>       
             <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-color-extra4 mx-2 btn-lg" data-bs-dismiss="alert" onclick="location.href='../proyecto/registro.html'">Registro</button>
-                <button type="button" class="btn btn-color-extra4 mx-2 btn-lg" data-bs-dismiss="alert" onclick="location.href='../proyecto/index.html'">Inicio</button>
+                <button type="button" class="btn mx-2 btn-lg" data-bs-dismiss="alert" onclick="location.href='../proyecto/registro.html'">Registro</button>
+                <button type="button" class="btn mx-2 btn-lg" data-bs-dismiss="alert" onclick="location.href='../proyecto/inicio.html'">Inicio</button>
             </div>
         </div>
 
