@@ -38,11 +38,10 @@ $row=mysqli_fetch_array($query);
                     </button>
                     <div class="collapse navbar-collapse" id="navbarScroll">
                         <div class="btn-group btn-custom">
-                            <a href="..\proyecto\inicio.html" class="btn active" aria-current="page">Inicio</a>
-                            <a href="..\proyecto\nosotros.html" class="btn">Nosotros</a>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Iniciar sesión
-                            </button>
+                                <a href="..\proyecto\inicio_iniciado.html" class="btn active" aria-current="page">Inicio</a>
+                                <a href="..\proyecto\nosotros_iniciado.html" class="btn">Nosotros</a>
+                                <a href="..\PHP\usuario.php" class="btn">Panel de Control</a>
+                                <a class="btn" href="..\proyecto\inicio.html" onclick="return confirm('¿Seguro/a que quieres cerrar sesión?')">Cerrar sesión</a>
                         </div>
                         <form class="d-flex ms-auto">
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -58,7 +57,7 @@ $row=mysqli_fetch_array($query);
 
         <!--MAIN-->
         <h1>Modificar usuario</h1>
-        <main class="container-registro" >
+        <main class="container-registro">
             <form class="row g-3" action="update.php" method="POST">
                 <input type="hidden" name="id_usuario" value="<?php echo $row['id_usuario'] ?>">
                 <div class="col-md-6">
@@ -95,20 +94,23 @@ $row=mysqli_fetch_array($query);
                             <option>Portugués</option>
                             <option>Italiano</option>
                         </select>
-                        </div>
+                    </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="input-group mb-3">
                         <label class="input-group-text" for="date_input">Fecha de nacimiento</label>
                         <input type="date" class="form-control" id="date_input" name="fecha_nac" value="<?php echo $row['fecha_nac'] ?>">
+                    </div>
                 </div>
-                <div class="btn-custom">
-                    <input type="submit" class="btn form-control" value="Modificar" onclick="return confirm('¿Seguro/a que desea modificar?')">
+                
+                <!-- Aquí está el botón centrado, pero solo ocupa el tamaño adecuado -->
+                <div class="d-flex justify-content-center align-items-center col-12 btn-custom">
+                    <input type="submit" class="btn btn-lg" value="Modificar" onclick="return confirm('¿Seguro/a que desea modificar?')">
                 </div>
             </form>
-            
         </main>
+
 
 
 

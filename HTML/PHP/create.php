@@ -11,21 +11,27 @@ $fecha_nac = $_POST['fecha_nac'];
 
 
 $comprobarEmail_sql = "SELECT * FROM usuarios WHERE email = '$email'";
-$resultado=mysqli_query($conexion,$comprobarEmail_sql);
+$resultadoEmail=mysqli_query($conexion,$comprobarEmail_sql);
+
+$comprobarUsuario_sql = "SELECT * FROM usuarios WHERE usuario = '$usuario'";
+$resultadoUsuario=mysqli_query($conexion,$comprobarUsuario_sql);
 
 #Comprueba que el correo electrónico no se encuentre en uso
-if (mysqli_num_rows($resultado) > 0){
-    $alerta = " La dirección de correo electrónico ya ha sido registrada <br><br>";
+if (mysqli_num_rows($resultadoEmail) > 0){
+    $alerta = "La dirección de correo electrónico ya se encuentra en uso";
 }else{
-    $sql="INSERT INTO usuarios (nombres, apellidos, usuario, contraseña, email, fecha_nac) VALUES ('$nombres','$apellidos','$usuario','$contraseña','$email', '$fecha_nac')";
-    
-    $query=mysqli_query($conexion,$sql);
-    if($query){
-        $alerta = "Registro exitoso </b><br>";
-    } else{
-        $alerta = "Error al insertar: " . mysqli_error($conexion) . "<br><br>";
-    }    
-    
+    if (mysqli_num_rows($resultadoUsuario) > 0){
+        $alerta = "El nombre de usuario ya se encuentra en uso";
+    }else{
+        $sql="INSERT INTO usuarios (nombres, apellidos, usuario, contraseña, email, fecha_nac) VALUES ('$nombres','$apellidos','$usuario','$contraseña','$email', '$fecha_nac')";
+        $query=mysqli_query($conexion,$sql);
+        if($query){
+            $alerta = "Registro exitoso </b><br>";
+        } else{
+            $alerta = "Error al insertar: " . mysqli_error($conexion) . "<br><br>";
+        }  
+        
+    }   
 }
 ?>
 
@@ -111,10 +117,8 @@ if (mysqli_num_rows($resultado) > 0){
 
         <div class="alert alert-info alert-dismissible fade show py-5 mt-5 mb-5 text-center" role="alert">
             <h3><?php echo $alerta; ?></h3>       
-            <div class="d-flex justify-content-center">
-                <button type="button" class="btn mx-2 btn-lg" data-bs-dismiss="alert" onclick="location.href='../proyecto/registro.html'">Registro</button>
-                <button type="button" class="btn mx-2 btn-lg" data-bs-dismiss="alert" onclick="location.href='../proyecto/inicio.html'">Inicio</button>
-            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="location.href='../proyecto/registro.html'"></button>
+            
         </div>
 
         <div class="container-fluid naranjo my-4">
