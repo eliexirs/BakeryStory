@@ -57,22 +57,6 @@ if (mysqli_num_rows($resultadoEmail) > 0){
                             <img src="..\proyecto\logo.png" alt="" width="40" height="40" class="d-inline-block align-text-center">
                             Bakery Story™
                         </h4>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarScroll">
-                            <div class="btn-group btn-custom">
-                                <a href="inicio.html" class="btn active" aria-current="page">Inicio</a>
-                                <a href="nosotros.html" class="btn">Nosotros</a>
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Iniciar sesión
-                                </button>
-                            </div>
-                            <form class="d-flex ms-auto">
-                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Buscar</button>
-                            </form>
-                        </div>
                     </div>
                 </nav>
         </header>

@@ -2,6 +2,13 @@
     font-family: Arial, sans-serif; /*Fuente universal*/
 }
 
+.alert-custom {
+    background-color: #ec8fcc;  /* Cambia el color de fondo */
+    color: white;  /* Cambia el color del texto */
+    border: 1px solid #dba0f3;  /* Cambia el color del borde */
+}
+
+
 .navbar{
     background-color: #dfbcf4; 
     border: 3px dashed #eddf8f;
